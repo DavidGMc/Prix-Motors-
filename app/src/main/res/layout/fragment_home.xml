@@ -1,0 +1,110 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <!-- Banner de noticias (inicialmente invisible) -->
+        <RelativeLayout
+            android:id="@+id/banner_oticias"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <!-- Aquí colocarías los elementos del banner de noticias -->
+        </RelativeLayout>
+
+        <!-- Textview antes del primer RecyclerView -->
+        <TextView
+            android:id="@+id/text_embrague"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="EMBRAGUE"
+            android:textSize="16sp"
+            android:typeface="sans"
+            app:layout_constraintTop_toBottomOf="@id/banner_oticias"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Textview antes del que dice prensas -->
+        <TextView
+            android:id="@+id/text_embrague_description"
+            android:layout_width="0dp"
+            android:autoLink="web|phone|email"
+            android:layout_height="wrap_content"
+            android:text="El embrague es el elemento encargado de transmitir la potencia del motor hasta la caja de cambios del automóvil, permitiendo que podamos, manualmente, realizar el cambio de marchas a la vez que se absorben las sacudidas de la transmisión."
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/text_embrague"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Textview centrado con el texto "Prensas" -->
+        <TextView
+            android:id="@+id/text_prensas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lo nuevo en prensas"
+            android:fontFamily="@font/poppins"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/text_embrague_description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Contenedor de RecyclerView para contenido relacionado con embragues -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPrensas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/text_prensas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Textview con el texto "Discos" -->
+        <TextView
+            android:id="@+id/text_discos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lo nuevo en discos"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins"
+            app:layout_constraintTop_toBottomOf="@id/rvPrensas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Contenedor de RecyclerView para contenido nuevo -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDiscos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/text_discos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<group android:checkableBehavior="all">
+
+    <item
+        android:id="@+id/fragmentHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/fragmentPrensas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/car_repair"
+        android:title="Prensas" />
+    <item
+        android:id="@+id/fragmentDiscos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/disc_full"
+        android:title="Discos" />
+    <item
+        android:id="@+id/fragmentRodamientos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/rodamientos"
+        android:title="Balineras" />
+    <item
+        android:id="@+id/fragmentNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/add_notes"
+        android:title="Notas" />
+</group>
+</menu>

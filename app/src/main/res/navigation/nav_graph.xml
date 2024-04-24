@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentHome">
+
+
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.androidavid.clucthmaster.fragment.FragmentHome"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_fragmentHome_to_detailsFragmentProducts"
+            app:destination="@id/detailsFragmentProducts" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPrensas"
+        android:name="com.androidavid.clucthmaster.fragment.FragmentPrensas"
+        android:label="Prensas"
+        tools:layout="@layout/fragment_prensas" >
+        <action
+            android:id="@+id/action_fragmentPrensas_to_detailsFragmentProducts"
+            app:destination="@id/detailsFragmentProducts" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDiscos"
+        android:name="com.androidavid.clucthmaster.fragment.FragmentDiscos"
+        android:label="Discos"
+        tools:layout="@layout/fragment_discos" >
+        <action
+            android:id="@+id/action_fragmentDiscos_to_detailsFragmentProducts"
+            app:destination="@id/detailsFragmentProducts" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentRodamientos"
+        android:name="com.androidavid.clucthmaster.fragment.FragmentRodamientos"
+        android:label="Balineras"
+        tools:layout="@layout/fragment_rodamientos" >
+        <action
+            android:id="@+id/action_fragmentRodamientos_to_detailsFragmentProducts"
+            app:destination="@id/detailsFragmentProducts" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentNotes"
+        android:name="com.androidavid.clucthmaster.fragment.FragmentNotes"
+        android:label="Notas"
+        tools:layout="@layout/fragment_notes">
+        <action
+            android:id="@+id/action_fragmentNotes_to_fragmentEditNote"
+            app:destination="@id/fragmentEditNote" />
+        <action
+            android:id="@+id/action_fragmentNotes_to_fragmentAddNote"
+            app:destination="@id/fragmentAddNote" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAddNote"
+        android:name="com.androidavid.clucthmaster.fragment.FragmentAddNote"
+        android:label="Agregar Ref">
+        <action
+            android:id="@+id/action_fragmentAddNote_to_fragmentNotes"
+            app:destination="@id/fragmentNotes" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentEditNote"
+        android:name="com.androidavid.clucthmaster.fragment.FragmentEditNote"
+        android:label="Editar Ref">
+        <action
+            android:id="@+id/action_fragmentEditNote_to_fragmentNotes"
+            app:destination="@id/fragmentNotes" />
+        <argument
+            android:name="note"
+            app:argType="com.androidavid.clucthmaster.model.Note"
+            app:nullable="true" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragmentProducts"
+        android:name="com.androidavid.clucthmaster.fragment.DetailsFragmentProducts"
+        android:label="Detalles"
+        tools:layout="@layout/fragment_details_products">
+
+        <argument
+            android:name="products"
+            app:argType="com.androidavid.clucthmaster.model.Products" />
+        <action
+            android:id="@+id/action_detailsFragmentProducts_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+        <action
+            android:id="@+id/action_detailsFragmentProducts_to_fragmentDiscos"
+            app:destination="@id/fragmentDiscos" />
+        <action
+            android:id="@+id/action_detailsFragmentProducts_to_fragmentPrensas"
+            app:destination="@id/fragmentPrensas" />
+        <action
+            android:id="@+id/action_detailsFragmentProducts_to_fragmentHome2"
+            app:destination="@id/fragmentHome" />
+    </fragment>
+</navigation>
