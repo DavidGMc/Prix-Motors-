@@ -3,10 +3,18 @@ Prix ​​motors + una app Android de Servicio Automotriz especializada en Embr
 
 ## Tecnologias 
 
-- Implementación de patrones de arquitectura como MVVM.
-- Retrofit para el Consumo de servicios API realizada en php , (gracias a chatgpt)
-- Uso de lenguaje Kotlin. 
-- Clasico Xml
+- Arquitectura MVVM.
+- Retrofit para el Consumo de API
+- Room
+- Firebase (messaging,remote config)
 - Coil para el procesamiento de imagenes
-- anuncios intersticiales
-- Navigation Component 
+- Anuncios intersticiales
+- Navigation Component
+
+## Instalación 
+- Clona el repositorio y abre con android studio
+- registra la app en firebase console
+- descarga el archivo googleservices.json
+- copia tu archivo json al nivel module project app
+- ejecuta
+
