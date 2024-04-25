@@ -18,3 +18,28 @@ Prix ​​motors + una app Android de Servicio Automotriz especializada en Embr
 - copia tu archivo json al nivel module project app
 - ejecuta
 
+## capturas de pantalla
+
+-Fragment home , banner de noticias ( mediante remote config de firebase)y articulos nuevos 
+
+![](https://www.androidavid.com/perfiles/prix_init.jpg)
+
+Fragment Prensas
+
+![](https://www.androidavid.com/perfiles/prix_prensas.jpg)
+
+Fragment Discos
+
+![](https://www.androidavid.com/perfiles/prix_discos.jpg)
+
+fragment Rodamientos 
+
+![](https://www.androidavid.com/perfiles/prix_balineras.jpg)
+
+Fragment Notas, puedes crar tus propias referencias, editarlas o eliminarlas, las referencias se guardan en la base de datos del dispositivo (Room)
+
+![](https://www.androidavid.com/perfiles/prix_notas.jpg)
+
+Fragment Details ( mas detalles al dar click sobre un articulo, como pais de origen, medidas , etc)
+
+![](https://www.androidavid.com/perfiles/prix_detalles.jpg)
