@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="com.androidavid.clucthmaster" />
-                  <option name="mobileSdkAppId" value="1:990965370774:android:12170c1f5695be5ff657b7" />
-                  <option name="projectId" value="prix-d30eb" />
-                  <option name="projectNumber" value="990965370774" />
+                  <option name="appId" value="PLACEHOLDER" />
+                  <option name="mobileSdkAppId" value="" />
+                  <option name="projectId" value="" />
+                  <option name="projectNumber" value="" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

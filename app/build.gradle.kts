@@ -9,11 +9,11 @@ plugins {
 }
 
 android {
-    namespace = "com.androidavid.clucthmaster"
+    namespace = "com.androidavid.prixmotors"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.androidavid.clucthmaster"
+        applicationId = "com.androidavid.prixmotors"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -68,6 +68,7 @@ dependencies {
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
     implementation ("androidx.room:room-ktx:$roomVersion")
+
 
     // Life Cycle Arch
     val lifecycleVersion = "2.6.2"
