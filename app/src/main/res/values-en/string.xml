@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="message_link_download">Download this AutoMotive app with me about Clutches, an app with images, descriptions, and references on this specialty, https://play.google.com/store/apps/details?id=com.androidavid.prixmotors</string>
+    <string name="menu_home_shared">Share</string>
+    <string name="menu_home_email">Email</string>
+    <string name="menu_home_policy">Privacy Policy</string>
+    <string name="menu_main_home">Home</string>
+    <string name="menu_main_prensas"> Plates</string>
+    <string name="menu_main_discos">Discs</string>
+    <string name="menu_main_balineras">Bearings</string>
+    <string name="menu_main_notes">Notes</string>
+    <string name="menu_note_search">Search</string>
+    <string name="menu_edit_note_delete">Delete</string>
+    <string name="menu_addnote_save">Save</string>
+    <string name="add_note_fragment">Add a reference.</string>
+    <string name="addnote_title_hint">Title or Name</string>
+    <string name="add_note_desc_hint">Descriptions</string>
+    <string name="marca_details_products">Brand</string>
+    <string name="modelo_details_products">Model</string>
+    <string name="any_details_products">Year</string>
+    <string name="description_details_product">Description</string>
+    <string name="edit_note_fragment">Edit Reference or Note.</string>
+    <string name="title_edit_note_fragment">Title or Name</string>
+    <string name="descriptiones_hint_edit_note">Descriptions</string>
+    <string name="edit_notefab_content_description">Edit note</string>
+    <string name="tv_text_home">CLUTCH</string>
+    <string name="tv_description_home">The clutch is the component responsible for transmitting engine power to the cars gearbox, allowing manual gear shifts while absorbing transmission shocks.</string>
+    <string name="tv_nuevo_en_prensas">New in Pressure Plates</string>
+    <string name="tv_nuevo_discos">New in Discs</string>
+    <string name="note_content_description_image">plus sign image</string>
+    <string name="note_title">Note Title</string>
+    <string name="description_note">Note Description</string>
+    <string name="marca_item_pdb">Brand</string>
+    <string name="modelo_item_pdb">Model</string>
+    <string name="any_item_pdb">Year</string>
+    <string name="inicio_label_fragment_home">Home</string>
+    <string name="prensas_fragment_prensas">Pressure Plates</string>
+    <string name="balineras_fragment">Bearings</string>
+    <string name="agregar_ref_fragment">Add Ref</string>
+    <string name="detalles_fragment">Details</string>
+    <string name="agregar_productos_fragment">Add Products</string>
+    <string name="politica_de_privacidad_fragment">Privacy Policy</string>
+    <string name="editar_ref_fragment">Edit Ref</string>
+    <string name="notes_fragment">Notes</string>
+    <string name="discos_fragment">Discs</string>
+    <string name="compartir_con">Share with</string>
+    <string name="enviar_email">Send email</string>
+    <string name="referencia_guardada">Reference Saved</string>
+    <string name="ingresa_un_titulo">Please enter a title or note</string>
+    <string name="eliminar_nota_title">Delete</string>
+    <string name="message_delete_nota">Are you sure you want to delete this note or reference?</string>
+    <string name="eliminar_nota">Delete</string>
+    <string name="referencia_eliminada">Reference Deleted</string>
+    <string name="cancelar_nota">Cancel</string>
+
+</resources>

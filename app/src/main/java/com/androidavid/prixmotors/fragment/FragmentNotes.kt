@@ -1,7 +1,6 @@
 package com.androidavid.prixmotors.fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuInflater
@@ -9,17 +8,17 @@ import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.widget.SearchView
-
 import androidx.core.view.MenuHost
 import androidx.core.view.MenuProvider
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.androidavid.prixmotors.MainActivity
 import com.androidavid.prixmotors.R
 import com.androidavid.prixmotors.adapter.NoteAdapter
 import com.androidavid.prixmotors.databinding.FragmentNotesBinding
 import com.androidavid.prixmotors.model.Note
+import com.androidavid.prixmotors.ui.MainActivity
 import com.androidavid.prixmotors.viewmodel.NoteViewModel
 
 

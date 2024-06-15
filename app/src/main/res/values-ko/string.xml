@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="message_link_download">이 AutoMotive 앱을 내려받아 보세요. 클러치에 대한 이미지, 설명 및 참고 자료가 포함되어 있습니다: https://play.google.com/store/apps/details?id=com.androidavid.prixmotors</string>
+    <string name="menu_home_shared">공유</string>
+    <string name="menu_home_email">이메일</string>
+    <string name="menu_home_policy">개인정보 보호 정책</string>
+    <string name="menu_main_home">홈</string>
+    <string name="menu_main_prensas">프레스</string>
+    <string name="menu_main_discos">디스크</string>
+    <string name="menu_main_balineras">베어링</string>
+    <string name="menu_main_notes">노트</string>
+    <string name="menu_note_search">검색</string>
+    <string name="menu_edit_note_delete">삭제</string>
+    <string name="menu_addnote_save">저장</string>
+    <string name="add_note_fragment">참조 추가</string>
+    <string name="addnote_title_hint">제목 또는 이름</string>
+    <string name="add_note_desc_hint">설명</string>
+    <string name="marca_details_products">브랜드</string>
+    <string name="modelo_details_products">모델</string>
+    <string name="any_details_products">연도</string>
+    <string name="description_details_product">설명</string>
+    <string name="edit_note_fragment">참조 또는 노트 편집</string>
+    <string name="title_edit_note_fragment">제목 또는 이름</string>
+    <string name="descriptiones_hint_edit_note">설명</string>
+    <string name="edit_notefab_content_description">노트 편집</string>
+    <string name="tv_text_home">클러치</string>
+    <string name="tv_description_home">클러치는 엔진의 동력을 자동차의 기어박스로 전달하여 수동으로 기어를 변경할 수 있도록하고 변속기의 충격을 흡수하는 요소입니다.</string>
+    <string name="tv_nuevo_en_prensas">프레스 새로운 소식</string>
+    <string name="tv_nuevo_discos">디스크 새로운 소식</string>
+    <string name="note_content_description_image">이미지 플러스 기호</string>
+    <string name="note_title">노트 제목</string>
+    <string name="description_note">노트 설명</string>
+    <string name="marca_item_pdb">브랜드</string>
+    <string name="modelo_item_pdb">모델</string>
+    <string name="any_item_pdb">연도</string>
+    <string name="inicio_label_fragment_home">홈</string>
+    <string name="prensas_fragment_prensas">프레스</string>
+    <string name="balineras_fragment">베어링</string>
+    <string name="agregar_ref_fragment">참조 추가</string>
+    <string name="detalles_fragment">세부 정보</string>
+    <string name="agregar_productos_fragment">제품 추가</string>
+    <string name="politica_de_privacidad_fragment">개인정보 보호 정책</string>
+    <string name="editar_ref_fragment">참조 편집</string>
+    <string name="notes_fragment">노트</string>
+    <string name="discos_fragment">디스크</string>
+    <string name="compartir_con">공유:</string>
+    <string name="enviar_email">이메일 보내기</string>
+    <string name="referencia_guardada">참조 저장됨</string>
+    <string name="ingresa_un_titulo">제목 또는 노트를 입력하세요</string>
+    <string name="eliminar_nota_title">삭제</string>
+    <string name="message_delete_nota">이 노트 또는 참조를 삭제하시겠습니까?</string>
+    <string name="eliminar_nota">삭제</string>
+    <string name="referencia_eliminada">참조가 삭제되었습니다</string>
+    <string name="cancelar_nota">취소</string>
+
+</resources>

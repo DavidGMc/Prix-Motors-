@@ -20,9 +20,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="200"
-
                 android:fontFamily="@font/poppins"
-                android:text="Note Title"
+                android:text="@string/note_title"
                 android:textSize="18sp"
                 android:textStyle="bold" />
             <TextView
@@ -31,7 +30,7 @@
                 android:id="@+id/noteDesc"
                 android:layout_marginTop="8dp"
                 android:maxHeight="170dp"
-                android:text="Description"
+                android:text="@string/description_note"
                 android:textSize="14sp"
                 android:fontFamily="@font/poppins"
                 />

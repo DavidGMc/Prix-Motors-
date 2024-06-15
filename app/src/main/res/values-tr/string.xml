@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_link_download">Bu uygulamayı benimle birlikte Emniyet Debriyajları hakkında indirin, bu özel alanın görselleri, açıklamaları ve referanslarıyla birlikte: https://play.google.com/store/apps/details?id=com.androidavid.prixmotors</string>
+    <string name="menu_home_shared">Paylaş</string>
+    <string name="menu_home_email">E-posta</string>
+    <string name="menu_home_policy">Gizlilik Politikası</string>
+    <string name="menu_main_home">Anasayfa</string>
+    <string name="menu_main_prensas">Debriyaj Plakaları</string>
+    <string name="menu_main_discos">Debriyaj Diskleri</string>
+    <string name="menu_main_balineras">Rulmanlar</string>
+    <string name="menu_main_notes">Notlar</string>
+    <string name="menu_note_search">Ara</string>
+    <string name="menu_edit_note_delete">Sil</string>
+    <string name="menu_addnote_save">Kaydet</string>
+    <string name="add_note_fragment">Bir referans ekleyin.</string>
+    <string name="addnote_title_hint">Başlık veya Ad</string>
+    <string name="add_note_desc_hint">Açıklamalar</string>
+    <string name="marca_details_products">Marka</string>
+    <string name="modelo_details_products">Model</string>
+    <string name="any_details_products">Yıl</string>
+    <string name="description_details_product">Açıklama</string>
+    <string name="edit_note_fragment">Referansı veya Notu Düzenle.</string>
+    <string name="title_edit_note_fragment">Başlık veya Ad</string>
+    <string name="descriptiones_hint_edit_note">Açıklamalar</string>
+    <string name="edit_notefab_content_description">"notu düzenle "</string>
+    <string name="tv_text_home">DEBRİYAJ</string>
+    <string name="tv_description_home">Debriyaj, otomobilin vites kutusuna motor gücünü ileten ve manuel olarak vites değiştirmemize olanak tanıyan, aynı zamanda şanzımanın sarsıntılarını emen bir elemandır.</string>
+    <string name="tv_nuevo_en_prensas">Debriyaj Plakalarında Yenilikler</string>
+    <string name="tv_nuevo_discos">Debriyaj Disklerinde Yenilikler</string>
+    <string name="note_content_description_image">resim artı işareti</string>
+    <string name="note_title">Not Başlığı</string>
+    <string name="description_note">Not Açıklaması</string>
+    <string name="marca_item_pdb">Marka</string>
+    <string name="modelo_item_pdb">Model</string>
+    <string name="any_item_pdb">Yıl</string>
+    <string name="inicio_label_fragment_home">Anasayfa</string>
+    <string name="prensas_fragment_prensas">Debriyaj Plakaları</string>
+    <string name="balineras_fragment">Rulmanlar</string>
+    <string name="agregar_ref_fragment">Referans Ekle</string>
+    <string name="detalles_fragment">Detaylar</string>
+    <string name="agregar_productos_fragment">Ürün Ekle</string>
+    <string name="politica_de_privacidad_fragment">Gizlilik Politikası</string>
+    <string name="editar_ref_fragment">Referansı Düzenle</string>
+    <string name="notes_fragment">Notlar</string>
+    <string name="discos_fragment">Debriyaj Diskleri</string>
+    <string name="compartir_con">İle Paylaş</string>
+    <string name="enviar_email">E-posta Gönder</string>
+    <string name="referencia_guardada">Referans Kaydedildi</string>
+    <string name="ingresa_un_titulo">Lütfen Bir Başlık veya Not Girin</string>
+    <string name="eliminar_nota_title">Sil</string>
+    <string name="message_delete_nota">Bu Notu veya Referansı Silmek İstediğinizden Emin misiniz?</string>
+    <string name="eliminar_nota">Sil</string>
+    <string name="referencia_eliminada">"Referans Silindi"</string>
+    <string name="cancelar_nota">İptal</string>
+
+</resources>

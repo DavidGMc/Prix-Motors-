@@ -17,7 +17,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
-            <!-- Aquí colocarías los elementos del banner de noticias -->
+
         </RelativeLayout>
 
         <!-- Textview antes del primer RecyclerView -->
@@ -26,7 +26,7 @@
             android:layout_width="0dp"
             android:textStyle="bold"
             android:layout_height="wrap_content"
-            android:text="EMBRAGUE"
+            android:text="@string/tv_text_home"
             android:textSize="16sp"
             android:typeface="sans"
             app:layout_constraintTop_toBottomOf="@id/banner_oticias"
@@ -42,7 +42,7 @@
             android:layout_width="0dp"
             android:autoLink="web|phone|email"
             android:layout_height="wrap_content"
-            android:text="El embrague es el elemento encargado de transmitir la potencia del motor hasta la caja de cambios del automóvil, permitiendo que podamos, manualmente, realizar el cambio de marchas a la vez que se absorben las sacudidas de la transmisión."
+            android:text="@string/tv_description_home"
             android:textSize="14sp"
             app:layout_constraintTop_toBottomOf="@id/text_embrague"
             app:layout_constraintStart_toStartOf="parent"
@@ -57,7 +57,7 @@
             android:id="@+id/text_prensas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lo nuevo en prensas"
+            android:text="@string/tv_nuevo_en_prensas"
             android:fontFamily="@font/poppins"
             android:textSize="16sp"
             app:layout_constraintTop_toBottomOf="@id/text_embrague_description"
@@ -84,7 +84,7 @@
             android:id="@+id/text_discos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lo nuevo en discos"
+            android:text="@string/tv_nuevo_discos"
             android:textSize="16sp"
             android:fontFamily="@font/poppins"
             app:layout_constraintTop_toBottomOf="@id/rvPrensas"

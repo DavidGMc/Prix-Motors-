@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.androidavid.prixmotors.R
 import com.androidavid.prixmotors.model.Note
 
 @Database(entities = [Note::class] , version = 1)
@@ -27,7 +28,7 @@ abstract class NoteDatabase : RoomDatabase(){
              Room.databaseBuilder(
              context.applicationContext,
              NoteDatabase::class.java,
-             "note_db"
+                 context.getString(R.string.note_db)
          ).build()
 
 

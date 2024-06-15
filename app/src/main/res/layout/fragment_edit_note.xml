@@ -18,7 +18,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/poppins"
-            android:text="Editar Referencia o Nota."
+            android:text="@string/edit_note_fragment"
             android:textStyle="bold"
             android:textSize="24sp" />
 
@@ -26,7 +26,7 @@
             android:id="@+id/editNoteTitle"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:hint="Titulo o Nombre"
+            android:hint="@string/title_edit_note_fragment"
             android:padding="12dp"
             android:textSize="20sp"
             android:layout_below="@id/editNoteHeading"
@@ -39,7 +39,7 @@
             android:id="@+id/editNoteDesc"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="descripciones"
+            android:hint="@string/descriptiones_hint_edit_note"
             android:gravity="top"
             android:padding="12dp"
             android:textSize="18sp"
@@ -59,7 +59,8 @@
             android:src="@drawable/save_px"
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
-            android:contentDescription="editFab" />
+            android:contentDescription="@string/edit_notefab_content_description"
+            android:focusable="true" />
 
     </RelativeLayout>
 </layout>

@@ -1,18 +1,24 @@
 package com.androidavid.prixmotors.fragment
 
+import InterstitialAdManager
+import android.content.ContentValues
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.androidavid.prixmotors.MainActivity
 import com.androidavid.prixmotors.R
 import com.androidavid.prixmotors.adapter.ProductsAdapter
 import com.androidavid.prixmotors.databinding.FragmentRodamientosBinding
+import com.androidavid.prixmotors.model.Products
+import com.androidavid.prixmotors.ui.MainActivity
 import com.androidavid.prixmotors.viewmodel.RodamientosViewModel
+import com.androidavid.prixmotors.viewmodel.SharedViewModel
 
 
 class FragmentRodamientos : Fragment(R.layout.fragment_rodamientos) {
@@ -21,6 +27,10 @@ class FragmentRodamientos : Fragment(R.layout.fragment_rodamientos) {
     private  val binding get()  = _binding!!
     private lateinit var productsAdapter: ProductsAdapter
     private lateinit var rodamientosViewModel: RodamientosViewModel
+    private lateinit var interstitialAdManager: InterstitialAdManager
+    private var clickCounterDis = 0
+    private val AD_CLICK_THRESHOLD = 5
+    private val sharedViewModel: SharedViewModel by activityViewModels()
 
 
 
@@ -34,7 +44,8 @@ class FragmentRodamientos : Fragment(R.layout.fragment_rodamientos) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        interstitialAdManager = InterstitialAdManager.getInstance(requireContext())
+        interstitialAdManager.loadInterstitialAd(requireActivity())
         rodamientosViewModel= (activity as MainActivity).rodamientosViewModel
         setupHomeRecyclerView()
         observarDiscos()
@@ -42,9 +53,9 @@ class FragmentRodamientos : Fragment(R.layout.fragment_rodamientos) {
 
     }
     private fun setupHomeRecyclerView(){
+
         productsAdapter = ProductsAdapter { product ->
-            val action = FragmentRodamientosDirections.actionFragmentRodamientosToDetailsFragmentProducts(product)
-            findNavController().navigate(action)
+            handleProductClickRodamientos(product)
         }
 
         binding.rvRodamientosFragment.apply {
@@ -62,6 +73,18 @@ class FragmentRodamientos : Fragment(R.layout.fragment_rodamientos) {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    private fun handleProductClickRodamientos(product: Products) {
+        sharedViewModel.clickCounterDis.value = (sharedViewModel.clickCounterDis.value ?: 0) + 1
+        if ((sharedViewModel.clickCounterDis.value ?: 0) % AD_CLICK_THRESHOLD == 0) {
+            Log.d(ContentValues.TAG, "Click = ${sharedViewModel.clickCounterDis.value}")
+            interstitialAdManager.showInterstitialAd(requireActivity())
+            sharedViewModel.clickCounterDis.value = 0
+        } else {
+            val action = FragmentRodamientosDirections.actionFragmentRodamientosToDetailsFragmentProducts(product)
+            findNavController().navigate(action)
+        }
     }
 
 

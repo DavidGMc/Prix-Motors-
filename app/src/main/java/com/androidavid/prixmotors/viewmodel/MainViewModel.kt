@@ -1,6 +1,7 @@
 package com.androidavid.prixmotors.viewmodel
 
 import android.content.Context
+import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.ViewModel
 import com.androidavid.prixmotors.repository.MainRepository
 
@@ -13,5 +14,8 @@ class MainViewModel(private val repository: MainRepository): ViewModel() {
     fun enviarEmail(context: Context) {
         repository.enviarEmail(context)
 
+    }
+    fun abrirPoliticaDePrivacidad(fragmentManager: FragmentManager) {
+        repository.abrirPoliticaDePrivacidad(fragmentManager)
     }
 }

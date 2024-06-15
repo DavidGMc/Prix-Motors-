@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_link_download">Scarica con me questa app AutoMotriz sugli Embrague (Frizioni), contenente immagini, descrizioni e riferimenti di questa specialità: https://play.google.com/store/apps/details?id=com.androidavid.prixmotors</string>
+    <string name="menu_home_shared">Condividi</string>
+    <string name="menu_home_email">Email</string>
+    <string name="menu_home_policy">Politica sulla privacy</string>
+    <string name="menu_main_home">Home</string>
+    <string name="menu_main_prensas">Frizioni</string>
+    <string name="menu_main_discos">Dischi</string>
+    <string name="menu_main_balineras">Cuscinetti</string>
+    <string name="menu_main_notes">Note</string>
+    <string name="menu_note_search">Cerca</string>
+    <string name="menu_edit_note_delete">Elimina</string>
+    <string name="menu_addnote_save">Salva</string>
+    <string name="add_note_fragment">Aggiungi un riferimento.</string>
+    <string name="addnote_title_hint">Titolo o nome</string>
+    <string name="add_note_desc_hint">Descrizioni</string>
+    <string name="marca_details_products">Marca</string>
+    <string name="modelo_details_products">Modello</string>
+    <string name="any_details_products">Anno</string>
+    <string name="description_details_product">Descrizione</string>
+    <string name="edit_note_fragment">Modifica Riferimento o Nota.</string>
+    <string name="title_edit_note_fragment">Titolo o Nome</string>
+    <string name="descriptiones_hint_edit_note">Descrizioni</string>
+    <string name="edit_notefab_content_description">"modifica nota "</string>
+    <string name="tv_text_home">FRIZIONE</string>
+    <string name="tv_description_home">La frizione è l elemento responsabile del trasferimento della potenza del motore al cambio dell auto, consentendo di cambiare manualmente le marce assorbendo le scosse della trasmissione.</string>
+    <string name="tv_nuevo_en_prensas">Novità sulle Frizioni</string>
+    <string name="tv_nuevo_discos">Novità sui Dischi</string>
+    <string name="note_content_description_image">immagine segno più</string>
+    <string name="note_title">Titolo della Nota</string>
+    <string name="description_note">Descrizione della Nota</string>
+    <string name="marca_item_pdb">Marca</string>
+    <string name="modelo_item_pdb">Modello</string>
+    <string name="any_item_pdb">Anno</string>
+    <string name="inicio_label_fragment_home">Home</string>
+    <string name="prensas_fragment_prensas">Frizioni</string>
+    <string name="balineras_fragment">Cuscinetti</string>
+    <string name="agregar_ref_fragment">Aggiungi Riferimento</string>
+    <string name="detalles_fragment">Dettagli</string>
+    <string name="agregar_productos_fragment">Aggiungi Prodotti</string>
+    <string name="politica_de_privacidad_fragment">Politica sulla privacy</string>
+    <string name="editar_ref_fragment">Modifica Riferimento</string>
+    <string name="notes_fragment">Note</string>
+    <string name="discos_fragment">Dischi</string>
+    <string name="compartir_con">Condividi con</string>
+    <string name="enviar_email">Invia email</string>
+    <string name="referencia_guardada">Riferimento Salvato</string>
+    <string name="ingresa_un_titulo">Inserisci un titolo o Nota</string>
+    <string name="eliminar_nota_title">Elimina</string>
+    <string name="message_delete_nota">Sei sicuro di voler eliminare questa Nota o Riferimento?</string>
+    <string name="eliminar_nota">Elimina</string>
+    <string name="referencia_eliminada">"Riferimento Eliminato "</string>
+    <string name="cancelar_nota">Annulla</string>
+
+</resources>

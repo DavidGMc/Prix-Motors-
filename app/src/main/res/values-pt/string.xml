@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_link_download">Baixe este aplicativo AutoMotive comigo sobre Embreagens, contendo imagens, descrições e referências desta especialidade: https://play.google.com/store/apps/details?id=com.androidavid.prixmotors</string>
+    <string name="menu_home_shared">Compartilhar</string>
+    <string name="menu_home_email">E-mail</string>
+    <string name="menu_home_policy">Política de Privacidade</string>
+    <string name="menu_main_home">Início</string>
+    <string name="menu_main_prensas">Plato</string>
+    <string name="menu_main_discos">Discos</string>
+    <string name="menu_main_balineras">Rolamentos</string>
+    <string name="menu_main_notes">Notas</string>
+    <string name="menu_note_search">Pesquisar</string>
+    <string name="menu_edit_note_delete">Excluir</string>
+    <string name="menu_addnote_save">Salvar</string>
+    <string name="add_note_fragment">Adicionar uma referência.</string>
+    <string name="addnote_title_hint">Título ou nome</string>
+    <string name="add_note_desc_hint">Descrições</string>
+    <string name="marca_details_products">Marca</string>
+    <string name="modelo_details_products">Modelo</string>
+    <string name="any_details_products">Ano</string>
+    <string name="description_details_product">Descrição</string>
+    <string name="edit_note_fragment">Editar Referência ou Nota.</string>
+    <string name="title_edit_note_fragment">Título ou Nome</string>
+    <string name="descriptiones_hint_edit_note">Descrições</string>
+    <string name="edit_notefab_content_description">"editar nota "</string>
+    <string name="tv_text_home">EMBREAGEM</string>
+    <string name="tv_description_home">A embreagem é o elemento responsável por transmitir a potência do motor para a caixa de câmbio do carro, permitindo que possamos, manualmente, realizar a troca de marchas ao mesmo tempo que absorve os solavancos da transmissão.</string>
+    <string name="tv_nuevo_en_prensas">Novidades em platô de embreagem</string>
+    <string name="tv_nuevo_discos">Novidades em Discos</string>
+    <string name="note_content_description_image">imagem sinal de adição</string>
+    <string name="note_title">Título da Nota</string>
+    <string name="description_note">Descrição da Nota</string>
+    <string name="marca_item_pdb">Marca</string>
+    <string name="modelo_item_pdb">Modelo</string>
+    <string name="any_item_pdb">Ano</string>
+    <string name="inicio_label_fragment_home">Início</string>
+    <string name="prensas_fragment_prensas">platô de embreagem</string>
+    <string name="balineras_fragment">Rolamentos</string>
+    <string name="agregar_ref_fragment">Adicionar Ref</string>
+    <string name="detalles_fragment">Detalhes</string>
+    <string name="agregar_productos_fragment">Adicionar Produtos</string>
+    <string name="politica_de_privacidad_fragment">Política de Privacidade</string>
+    <string name="editar_ref_fragment">Editar Ref</string>
+    <string name="notes_fragment">Notas</string>
+    <string name="discos_fragment">Discos</string>
+    <string name="compartir_con">Compartilhar com</string>
+    <string name="enviar_email">Enviar e-mail</string>
+    <string name="referencia_guardada">Referência Salva</string>
+    <string name="ingresa_un_titulo">Por favor, insira um título ou Nota</string>
+    <string name="eliminar_nota_title">Excluir</string>
+    <string name="message_delete_nota">Tem certeza de que deseja excluir esta Nota ou Referência?</string>
+    <string name="eliminar_nota">Excluir</string>
+    <string name="referencia_eliminada">"Referência Excluída"</string>
+    <string name="cancelar_nota">Cancelar</string>
+
+</resources>

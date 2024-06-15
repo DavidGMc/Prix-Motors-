@@ -1,6 +1,7 @@
 package com.androidavid.prixmotors
 
 import com.androidavid.prixmotors.model.AddProductResponse
+import com.androidavid.prixmotors.model.Category
 import com.androidavid.prixmotors.model.Products
 import retrofit2.Call
 import retrofit2.Response
@@ -11,8 +12,11 @@ import retrofit2.http.POST
 import retrofit2.http.Query
 
 interface ClutchAPI {
+
+    @GET("get_all_categories.php")
+    fun getAllCategories(): Call<List<Category>>
     @GET("get_products.php")
-    fun getProducts(): Call<List<Products>>
+    fun getProducts(): Response<List<Products>>
 
     @GET("get_productsByCategory.php")
     fun getProductsByCategory(@Query("categoria_id") categoryId: Int): Call<List<Products>>

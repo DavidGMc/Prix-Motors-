@@ -31,7 +31,7 @@ class InterstitialAdManager private constructor(context: Context) {
 
     fun loadInterstitialAd(activity: Activity) {
         val adRequest = AdRequest.Builder().build()
-        InterstitialAd.load(activity, "ca-app-pub-3940256099942544/1033173712", adRequest, object : InterstitialAdLoadCallback() {
+        InterstitialAd.load(activity, "ca-app-pub-2196269772372009/3265134923", adRequest, object : InterstitialAdLoadCallback() {
             override fun onAdFailedToLoad(adError: LoadAdError) {
                 Log.e(TAG, "Failed to load interstitial ad: ${adError.message}")
                 mInterstitialAd = null

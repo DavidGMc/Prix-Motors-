@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_link_download">मुझसे इस ऑटोमोटिव ऐप को डाउनलोड करें, जो क्लच के बारे में चित्र, विवरण और संदर्भ शामिल है: https://play.google.com/store/apps/details?id=com.androidavid.prixmotors</string>
+    <string name="menu_home_shared">साझा करें</string>
+    <string name="menu_home_email">ईमेल</string>
+    <string name="menu_home_policy">गोपनीयता नीति</string>
+    <string name="menu_main_home">होम</string>
+    <string name="menu_main_prensas">प्रेस</string>
+    <string name="menu_main_discos">डिस्क</string>
+    <string name="menu_main_balineras">बेयरिंग</string>
+    <string name="menu_main_notes">नोट्स</string>
+    <string name="menu_note_search">खोजें</string>
+    <string name="menu_edit_note_delete">हटाएं</string>
+    <string name="menu_addnote_save">सहेजें</string>
+    <string name="add_note_fragment">संदर्भ जोड़ें।</string>
+    <string name="addnote_title_hint">शीर्षक या नाम</string>
+    <string name="add_note_desc_hint">विवरण</string>
+    <string name="marca_details_products">ब्रांड</string>
+    <string name="modelo_details_products">मॉडल</string>
+    <string name="any_details_products">वर्ष</string>
+    <string name="description_details_product">विवरण</string>
+    <string name="edit_note_fragment">संदर्भ या नोट संपादित करें।</string>
+    <string name="title_edit_note_fragment">शीर्षक या नाम</string>
+    <string name="descriptiones_hint_edit_note">विवरण</string>
+    <string name="edit_notefab_content_description">"नोट संपादित करें "</string>
+    <string name="tv_text_home">क्लच</string>
+    <string name="tv_description_home">क्लच वह तत्व है जो ऑटोमोबाइल की गियर बॉक्स में इंजन की शक्ति को संचारित करता है, जिससे हम समय-समय पर मैन्युअल गियर बदल सकते हैं, जबकि ट्रांसमिशन की हिलने को शांत कर दिया जाता है।</string>
+    <string name="tv_nuevo_en_prensas">प्रेस में नई खबरें</string>
+    <string name="tv_nuevo_discos">डिस्क में नई खबरें</string>
+    <string name="note_content_description_image">चित्र चिन्ह जोड़ें</string>
+    <string name="note_title">नोट का शीर्षक</string>
+    <string name="description_note">नोट का विवरण</string>
+    <string name="marca_item_pdb">ब्रांड</string>
+    <string name="modelo_item_pdb">मॉडल</string>
+    <string name="any_item_pdb">वर्ष</string>
+    <string name="inicio_label_fragment_home">होम</string>
+    <string name="prensas_fragment_prensas">प्रेस</string>
+    <string name="balineras_fragment">बेयरिंग</string>
+    <string name="agregar_ref_fragment">संदर्भ जोड़ें</string>
+    <string name="detalles_fragment">विवरण</string>
+    <string name="agregar_productos_fragment">उत्पाद जोड़ें</string>
+    <string name="politica_de_privacidad_fragment">गोपनीयता नीति</string>
+    <string name="editar_ref_fragment">संदर्भ संपादित करें</string>
+    <string name="notes_fragment">नोट्स</string>
+    <string name="discos_fragment">डिस्क</string>
+    <string name="compartir_con">साझा करें:</string>
+    <string name="enviar_email">ईमेल भेजें</string>
+    <string name="referencia_guardada">संदर्भ सहेजा गया</string>
+    <string name="ingresa_un_titulo">कृपया एक शीर्षक या नोट दर्ज करें</string>
+    <string name="eliminar_nota_title">हटाएं</string>
+    <string name="message_delete_nota">क्या आप वाकई इस नोट या संदर्भ को हटाना चाहते हैं?</string>
+    <string name="eliminar_nota">हटाएं</string>
+    <string name="referencia_eliminada">"संदर्भ हटा दिया गया"</string>
+    <string name="cancelar_nota">रद्द करें</string>
+
+</resources>

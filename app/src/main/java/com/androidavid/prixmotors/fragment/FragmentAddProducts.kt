@@ -16,7 +16,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import com.androidavid.prixmotors.MainActivity
+import com.androidavid.prixmotors.ui.MainActivity
 import com.androidavid.prixmotors.R
 import com.androidavid.prixmotors.databinding.FragmentAddProductBinding
 import com.androidavid.prixmotors.viewmodel.ProductsViewModel

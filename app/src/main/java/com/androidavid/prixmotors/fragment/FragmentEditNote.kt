@@ -16,10 +16,10 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.navArgs
-import com.androidavid.prixmotors.MainActivity
 import com.androidavid.prixmotors.R
 import com.androidavid.prixmotors.databinding.FragmentEditNoteBinding
 import com.androidavid.prixmotors.model.Note
+import com.androidavid.prixmotors.ui.MainActivity
 import com.androidavid.prixmotors.viewmodel.NoteViewModel
 
 
@@ -69,21 +69,21 @@ class FragmentEditNote : Fragment(R.layout.fragment_edit_note), MenuProvider {
                 interstitialAdManager.showInterstitialAd(requireActivity())
                 view.findNavController().popBackStack(R.id.fragmentNotes,false)
             }else{
-                Toast.makeText(context,"Por favor ingresa nota al titulo ", Toast.LENGTH_LONG).show()
+                Toast.makeText(context,R.string.ingresa_un_titulo, Toast.LENGTH_LONG).show()
             }
         }
     }
     private fun deleteNote(){
         AlertDialog.Builder(activity).apply {
-            setTitle("Eliminar")
-            setMessage("Estas seguro de Eliminar esta Nota o Referencia?")
+            setTitle(getString(R.string.eliminar_nota_title))
+            setMessage(getString(R.string.message_delete_nota))
 
-            setPositiveButton("Eliminar"){_,_ ->
+            setPositiveButton(getString(R.string.eliminar_nota)){ _, _ ->
                 notesViewModel.deleteNote(currentNote)
-                Toast.makeText(context,"Referencia Eliminada ", Toast.LENGTH_LONG).show()
+                Toast.makeText(context, getString(R.string.referencia_eliminada), Toast.LENGTH_LONG).show()
                 view?.findNavController()?.popBackStack(R.id.fragmentNotes,false)
             }
-            setNegativeButton("Cancelar", null)
+            setNegativeButton(getString(R.string.cancelar_nota), null)
 
         }.create().show()
     }

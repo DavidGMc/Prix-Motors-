@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_link_download">和我一起下载这个AutoMotive应用，其中包含有关离合器的图片，描述和参考资料：https://play.google.com/store/apps/details?id=com.androidavid.prixmotors</string>
+    <string name="menu_home_shared">分享</string>
+    <string name="menu_home_email">电子邮件</string>
+    <string name="menu_home_policy">隐私政策</string>
+    <string name="menu_main_home">主页</string>
+    <string name="menu_main_prensas">压盘</string>
+    <string name="menu_main_discos">离合器片</string>
+    <string name="menu_main_balineras">轴承</string>
+    <string name="menu_main_notes">注释</string>
+    <string name="menu_note_search">搜索</string>
+    <string name="menu_edit_note_delete">删除</string>
+    <string name="menu_addnote_save">保存</string>
+    <string name="add_note_fragment">添加参考。</string>
+    <string name="addnote_title_hint">标题或名称</string>
+    <string name="add_note_desc_hint">描述</string>
+    <string name="marca_details_products">品牌</string>
+    <string name="modelo_details_products">型号</string>
+    <string name="any_details_products">年份</string>
+    <string name="description_details_product">描述</string>
+    <string name="edit_note_fragment">编辑参考或注释。</string>
+    <string name="title_edit_note_fragment">标题或名称</string>
+    <string name="descriptiones_hint_edit_note">描述</string>
+    <string name="edit_notefab_content_description">编辑注释</string>
+    <string name="tv_text_home">离合器</string>
+    <string name="tv_description_home">离合器是将发动机的动力传递到汽车变速箱的元件，使我们能够手动换挡，同时吸收变速器的冲击。</string>
+    <string name="tv_nuevo_en_prensas">压盘新闻</string>
+    <string name="tv_nuevo_discos">离合器片新闻</string>
+    <string name="note_content_description_image">图像加号</string>
+    <string name="note_title">注释标题</string>
+    <string name="description_note">注释描述</string>
+    <string name="marca_item_pdb">品牌</string>
+    <string name="modelo_item_pdb">型号</string>
+    <string name="any_item_pdb">年份</string>
+    <string name="inicio_label_fragment_home">主页</string>
+    <string name="prensas_fragment_prensas">压盘</string>
+    <string name="balineras_fragment">轴承</string>
+    <string name="agregar_ref_fragment">添加参考</string>
+    <string name="detalles_fragment">详细信息</string>
+    <string name="agregar_productos_fragment">添加产品</string>
+    <string name="politica_de_privacidad_fragment">隐私政策</string>
+    <string name="editar_ref_fragment">编辑参考</string>
+    <string name="notes_fragment">注释</string>
+    <string name="discos_fragment">离合器片</string>
+    <string name="compartir_con">分享给</string>
+    <string name="enviar_email">发送电子邮件</string>
+    <string name="referencia_guardada">参考已保存</string>
+    <string name="ingresa_un_titulo">请输入标题或注释</string>
+    <string name="eliminar_nota_title">删除</string>
+    <string name="message_delete_nota">确定要删除此注释或参考吗？</string>
+    <string name="eliminar_nota">删除</string>
+    <string name="referencia_eliminada">参考已删除</string>
+    <string name="cancelar_nota">取消</string>
+
+
+</resources>

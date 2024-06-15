@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_link_download">このAutoMotiveアプリを一緒にダウンロードしてください。クラッチに関する画像、説明、参考文献が含まれています。 https://play.google.com/store/apps/details?id=com.androidavid.prixmotors</string>
+    <string name="menu_home_shared">共有</string>
+    <string name="menu_home_email">メール</string>
+    <string name="menu_home_policy">プライバシーポリシー</string>
+    <string name="menu_main_home">ホーム</string>
+    <string name="menu_main_prensas">プレート</string>
+    <string name="menu_main_discos">ディスク</string>
+    <string name="menu_main_balineras">ベアリング</string>
+    <string name="menu_main_notes">ノート</string>
+    <string name="menu_note_search">検索</string>
+    <string name="menu_edit_note_delete">削除</string>
+    <string name="menu_addnote_save">保存</string>
+    <string name="add_note_fragment">参照を追加。</string>
+    <string name="addnote_title_hint">タイトルまたは名前</string>
+    <string name="add_note_desc_hint">説明</string>
+    <string name="marca_details_products">ブランド</string>
+    <string name="modelo_details_products">モデル</string>
+    <string name="any_details_products">年</string>
+    <string name="description_details_product">説明</string>
+    <string name="edit_note_fragment">参照またはノートを編集。</string>
+    <string name="title_edit_note_fragment">タイトルまたは名前</string>
+    <string name="descriptiones_hint_edit_note">説明</string>
+    <string name="edit_notefab_content_description">ノートを編集</string>
+    <string name="tv_text_home">クラッチ</string>
+    <string name="tv_description_home">クラッチは、エンジンの力を車のギアボックスに伝え、手動でギアチェンジを可能にしながら、トランスミッションの衝撃を吸収する役割を担うコンポーネントです。</string>
+    <string name="tv_nuevo_en_prensas">新しいプレート</string>
+    <string name="tv_nuevo_discos">新しいディスク</string>
+    <string name="note_content_description_image">プラス記号の画像</string>
+    <string name="note_title">ノートのタイトル</string>
+    <string name="description_note">ノートの説明</string>
+    <string name="marca_item_pdb">ブランド</string>
+    <string name="modelo_item_pdb">モデル</string>
+    <string name="any_item_pdb">年</string>
+    <string name="inicio_label_fragment_home">ホーム</string>
+    <string name="prensas_fragment_prensas">プレート</string>
+    <string name="balineras_fragment">ベアリング</string>
+    <string name="agregar_ref_fragment">参照を追加</string>
+    <string name="detalles_fragment">詳細</string>
+    <string name="agregar_productos_fragment">製品を追加</string>
+    <string name="politica_de_privacidad_fragment">プライバシーポリシー</string>
+    <string name="editar_ref_fragment">参照を編集</string>
+    <string name="notes_fragment">ノート</string>
+    <string name="discos_fragment">ディスク</string>
+    <string name="compartir_con">共有</string>
+    <string name="enviar_email">メールを送信</string>
+    <string name="referencia_guardada">参照が保存されました</string>
+    <string name="ingresa_un_titulo">タイトルまたはノートを入力してください</string>
+    <string name="eliminar_nota_title">削除</string>
+    <string name="message_delete_nota">このノートまたは参照を削除してもよろしいですか？</string>
+    <string name="eliminar_nota">削除</string>
+    <string name="referencia_eliminada">参照が削除されました</string>
+    <string name="cancelar_nota">キャンセル</string>
+
+
+</resources>

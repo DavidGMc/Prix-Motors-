@@ -1,21 +1,47 @@
-# Add project specific ProGuard rules here.
-# You can control the set of applied configuration files using the
-# proguardFiles setting in build.gradle.
-#
-# For more details, see
-#   http://developer.android.com/guide/developing/tools/proguard.html
+# Mantener la clase MyApp y todos sus métodos
+-keep class com.androidavid.prixmotors.MyApp {
+    *;
+}
 
-# If your project uses WebView with JS, uncomment the following
-# and specify the fully qualified class name to the JavaScript interface
-# class:
-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
-#}
+# Mantener la clase RetrofitClient y todos sus métodos
+-keep class com.androidavid.prixmotors.RetrofitClient {
+    *;
+}
 
-# Uncomment this to preserve the line number information for
-# debugging stack traces.
-#-keepattributes SourceFile,LineNumberTable
+# Mantener las clases de Retrofit y sus convertidores
+-keep class retrofit2.* { *; }
+-keep class retrofit2.converter.gson.* { *; }
+-keepattributes Signature
+-keepattributes *Annotation*
 
-# If you keep the line number information, uncomment this to
-# hide the original source file name.
-#-renamesourcefileattribute SourceFile
+# Mantener la clase Products y todas sus propiedades
+-keep class com.androidavid.prixmotors.model.Products {
+    *;
+}
+
+# Mantener las clases que implementan Parcelable y sus miembros
+-keepclassmembers class * implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+
+# Mantener la interfaz ClutchAPI y todos sus métodos
+-keep interface com.androidavid.prixmotors.ClutchAPI {
+    *;
+}
+
+# Mantener la clase MainActivity y todos sus métodos
+-keep class com.androidavid.prixmotors.ui.MainActivity {
+    *;
+}
+
+# Mantener las clases de la biblioteca de navegación
+-keep class androidx.navigation.** { *; }
+-keepclassmembers class * extends androidx.fragment.app.Fragment {
+    public <init>(...);
+}
+-keepattributes *Annotation*
+-keep class androidx.fragment.app.FragmentContainerView { *; }
+
+# Mantener las clases de ViewModel
+-keep class androidx.lifecycle.ViewModel { *; }
+-keep class com.androidavid.prixmotors.viewmodel.** { *; }

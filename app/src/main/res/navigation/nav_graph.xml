@@ -9,43 +9,58 @@
     <fragment
         android:id="@+id/fragmentHome"
         android:name="com.androidavid.prixmotors.fragment.FragmentHome"
-        android:label="Inicio"
+        android:label="@string/inicio_label_fragment_home"
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_fragmentHome_to_detailsFragmentProducts"
             app:destination="@id/detailsFragmentProducts" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentPolicyPrivacy"
+            app:destination="@id/fragmentPolicyPrivacy" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentLibrary"
+            app:destination="@id/fragmentLibrary" />
     </fragment>
     <fragment
         android:id="@+id/fragmentPrensas"
         android:name="com.androidavid.prixmotors.fragment.FragmentPrensas"
-        android:label="Prensas"
+        android:label="@string/prensas_fragment_prensas"
         tools:layout="@layout/fragment_prensas" >
         <action
             android:id="@+id/action_fragmentPrensas_to_detailsFragmentProducts"
             app:destination="@id/detailsFragmentProducts" />
+        <action
+            android:id="@+id/action_fragmentPrensas_to_fragmentLibrary"
+            app:destination="@id/fragmentLibrary" />
     </fragment>
     <fragment
         android:id="@+id/fragmentDiscos"
         android:name="com.androidavid.prixmotors.fragment.FragmentDiscos"
-        android:label="Discos"
+        android:label="@string/discos_fragment"
         tools:layout="@layout/fragment_discos" >
         <action
             android:id="@+id/action_fragmentDiscos_to_detailsFragmentProducts"
             app:destination="@id/detailsFragmentProducts" />
+        <action
+            android:id="@+id/action_fragmentDiscos_to_fragmentLibrary"
+            app:destination="@id/fragmentLibrary" />
     </fragment>
     <fragment
         android:id="@+id/fragmentRodamientos"
         android:name="com.androidavid.prixmotors.fragment.FragmentRodamientos"
-        android:label="Balineras"
+        android:label="@string/balineras_fragment"
         tools:layout="@layout/fragment_rodamientos" >
         <action
             android:id="@+id/action_fragmentRodamientos_to_detailsFragmentProducts"
             app:destination="@id/detailsFragmentProducts" />
+        <action
+            android:id="@+id/action_fragmentRodamientos_to_fragmentLibrary"
+            app:destination="@id/fragmentLibrary" />
     </fragment>
     <fragment
         android:id="@+id/fragmentNotes"
         android:name="com.androidavid.prixmotors.fragment.FragmentNotes"
-        android:label="Notas"
+        android:label="@string/notes_fragment"
         tools:layout="@layout/fragment_notes">
         <action
             android:id="@+id/action_fragmentNotes_to_fragmentEditNote"
@@ -57,7 +72,7 @@
     <fragment
         android:id="@+id/fragmentAddNote"
         android:name="com.androidavid.prixmotors.fragment.FragmentAddNote"
-        android:label="Agregar Ref">
+        android:label="@string/agregar_ref_fragment">
         <action
             android:id="@+id/action_fragmentAddNote_to_fragmentNotes"
             app:destination="@id/fragmentNotes" />
@@ -65,7 +80,7 @@
     <fragment
         android:id="@+id/fragmentEditNote"
         android:name="com.androidavid.prixmotors.fragment.FragmentEditNote"
-        android:label="Editar Ref">
+        android:label="@string/editar_ref_fragment">
         <action
             android:id="@+id/action_fragmentEditNote_to_fragmentNotes"
             app:destination="@id/fragmentNotes" />
@@ -78,7 +93,7 @@
     <fragment
         android:id="@+id/detailsFragmentProducts"
         android:name="com.androidavid.prixmotors.fragment.DetailsFragmentProducts"
-        android:label="Detalles"
+        android:label="@string/detalles_fragment"
         tools:layout="@layout/fragment_details_products">
 
         <argument
@@ -100,5 +115,27 @@
     <fragment
         android:id="@+id/fragmentAddProducts"
         android:name="com.androidavid.prixmotors.fragment.FragmentAddProducts"
-        android:label="Agregar Productos" />
+        android:label="@string/agregar_productos_fragment" />
+    <fragment
+        android:id="@+id/fragmentPolicyPrivacy"
+        android:name="com.androidavid.prixmotors.fragment.FragmentPolicyPrivacy"
+        android:label="@string/politica_de_privacidad_fragment"
+        tools:layout="@layout/fragment_policy_privacy" />
+    <fragment
+        android:id="@+id/fragmentLibrary"
+        android:name="com.androidavid.prixmotors.fragment.FragmentLibrary"
+        android:label="Categorias">
+        <argument
+            android:name="category"
+            app:argType="com.androidavid.prixmotors.model.Category" />
+        <action
+            android:id="@+id/action_fragmentLibrary_to_fragmentDiscos"
+            app:destination="@id/fragmentDiscos" />
+        <action
+            android:id="@+id/action_fragmentLibrary_to_fragmentRodamientos"
+            app:destination="@id/fragmentRodamientos" />
+        <action
+            android:id="@+id/action_fragmentLibrary_to_fragmentPrensas"
+            app:destination="@id/fragmentPrensas" />
+    </fragment>
 </navigation>

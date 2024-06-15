@@ -8,21 +8,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:icon="@drawable/shared_reviews"
-            android:title="Compartir"
+            android:title="@string/menu_home_shared"
             app:showAsAction="ifRoom" />
         <item
             android:id="@+id/menu_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:icon="@drawable/ic_mail"
-            android:title="email"
+            android:title="@string/menu_home_email"
             app:showAsAction="ifRoom" />
         <item
             android:id="@+id/menu_settings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:icon="@drawable/settings"
-            android:title="configuracion"
+            android:icon="@drawable/policy"
+            android:title="@string/menu_home_policy"
             app:showAsAction="ifRoom" />
     </group>
 </menu>

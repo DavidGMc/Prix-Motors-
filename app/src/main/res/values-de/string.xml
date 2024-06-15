@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="message_link_download">Lade diese AutoMotive-App mit mir herunter, die Bilder, Beschreibungen und Referenzen zu Kupplungen enthält: https://play.google.com/store/apps/details?id=com.androidavid.prixmotors</string>
+    <string name="menu_home_shared">Teilen</string>
+    <string name="menu_home_email">E-Mail</string>
+    <string name="menu_home_policy">Datenschutzrichtlinie</string>
+    <string name="menu_main_home">Startseite</string>
+    <string name="menu_main_prensas">Druckplatten</string>
+    <string name="menu_main_discos">Scheiben</string>
+    <string name="menu_main_balineras">Lager</string>
+    <string name="menu_main_notes">Notizen</string>
+    <string name="menu_note_search">Suchen</string>
+    <string name="menu_edit_note_delete">Löschen</string>
+    <string name="menu_addnote_save">Speichern</string>
+    <string name="add_note_fragment">Referenz hinzufügen.</string>
+    <string name="addnote_title_hint">Titel oder Name</string>
+    <string name="add_note_desc_hint">Beschreibungen</string>
+    <string name="marca_details_products">Marke</string>
+    <string name="modelo_details_products">Modell</string>
+    <string name="any_details_products">Jahr</string>
+    <string name="description_details_product">Beschreibung</string>
+    <string name="edit_note_fragment">Referenz oder Notiz bearbeiten.</string>
+    <string name="title_edit_note_fragment">Titel oder Name</string>
+    <string name="descriptiones_hint_edit_note">Beschreibungen</string>
+    <string name="edit_notefab_content_description">Notiz bearbeiten</string>
+    <string name="tv_text_home">KUPPLUNG</string>
+    <string name="tv_description_home">Die Kupplung ist das Element, das die Leistung des Motors auf das Getriebe des Autos überträgt und es ermöglicht, manuell die Gänge zu wechseln, während es die Erschütterungen des Getriebes absorbiert.</string>
+    <string name="tv_nuevo_en_prensas">Neuigkeiten bei Druckplatten</string>
+    <string name="tv_nuevo_discos">Neuigkeiten bei Scheiben</string>
+    <string name="note_content_description_image">Bild Pluszeichen</string>
+    <string name="note_title">Titel der Notiz</string>
+    <string name="description_note">Beschreibung der Notiz</string>
+    <string name="marca_item_pdb">Marke</string>
+    <string name="modelo_item_pdb">Modell</string>
+    <string name="any_item_pdb">Jahr</string>
+    <string name="inicio_label_fragment_home">Startseite</string>
+    <string name="prensas_fragment_prensas">Druckplatten</string>
+    <string name="balineras_fragment">Lager</string>
+    <string name="agregar_ref_fragment">Referenz hinzufügen</string>
+    <string name="detalles_fragment">Details</string>
+    <string name="agregar_productos_fragment">Produkte hinzufügen</string>
+    <string name="politica_de_privacidad_fragment">Datenschutzrichtlinie</string>
+    <string name="editar_ref_fragment">Referenz bearbeiten</string>
+    <string name="notes_fragment">Notizen</string>
+    <string name="discos_fragment">Scheiben</string>
+    <string name="compartir_con">Teilen mit</string>
+    <string name="enviar_email">E-Mail senden</string>
+    <string name="referencia_guardada">Referenz gespeichert</string>
+    <string name="ingresa_un_titulo">Bitte geben Sie einen Titel oder eine Notiz ein</string>
+    <string name="eliminar_nota_title">Löschen</string>
+    <string name="message_delete_nota">Möchten Sie diese Notiz oder Referenz wirklich löschen?</string>
+    <string name="eliminar_nota">Löschen</string>
+    <string name="referencia_eliminada">Referenz gelöscht</string>
+    <string name="cancelar_nota">Abbrechen</string>
+
+</resources>

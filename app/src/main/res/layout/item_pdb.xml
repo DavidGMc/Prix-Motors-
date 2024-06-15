@@ -20,7 +20,7 @@
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toTopOf="@+id/marcaTextView"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/prensa_wolkswagen" />
+            app:srcCompat="@drawable/prensa_mazda3_1600_a" />
 
         <TextView
             android:id="@+id/marcaTextView"
@@ -29,7 +29,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"
-            android:text="Marca"
+            android:text="@string/marca_item_pdb"
             android:textIsSelectable="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -43,7 +43,7 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"
             android:textIsSelectable="true"
-            android:text="Modelo"
+            android:text="@string/modelo_item_pdb"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/marcaTextView" />
@@ -57,7 +57,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:textIsSelectable="true"
-            android:text="Año"
+            android:text="@string/any_item_pdb"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/modeloTextView" />

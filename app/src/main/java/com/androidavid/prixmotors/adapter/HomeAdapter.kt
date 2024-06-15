@@ -47,6 +47,7 @@ class HomeAdapter(private val onItemClickListener: (Products) -> Unit): Recycler
         return differ.currentList.size
     }
     class HomeViewHolder(val itemPdbBinding: ItemPdbBinding): RecyclerView.ViewHolder(itemPdbBinding.root)
+
     private val differCallback = object : DiffUtil.ItemCallback<Products>(){
         override fun areItemsTheSame(oldItem: Products, newItem: Products): Boolean {
             return oldItem.id == newItem.id &&

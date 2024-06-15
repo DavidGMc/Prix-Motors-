@@ -14,10 +14,10 @@ import androidx.core.view.MenuProvider
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import androidx.navigation.findNavController
-import com.androidavid.prixmotors.MainActivity
 import com.androidavid.prixmotors.R
 import com.androidavid.prixmotors.databinding.FragmentAddNoteBinding
 import com.androidavid.prixmotors.model.Note
+import com.androidavid.prixmotors.ui.MainActivity
 import com.androidavid.prixmotors.viewmodel.NoteViewModel
 
 
@@ -59,11 +59,13 @@ class FragmentAddNote : Fragment(R.layout.fragment_add_note), MenuProvider {
             notesViewModel.addNote(note)
             interstitialAdManager.showInterstitialAd(requireActivity())
 
-            Toast.makeText(addNoteView.context,"Referencia Guardada", Toast.LENGTH_LONG).show()
+            Toast.makeText(addNoteView.context,
+                getString(R.string.referencia_guardada), Toast.LENGTH_LONG).show()
 
             view.findNavController().popBackStack(R.id.fragmentNotes,false)
         }else{
-            Toast.makeText(addNoteView.context,"Por favor ingresa un titulo o Nota", Toast.LENGTH_LONG).show()
+            Toast.makeText(addNoteView.context,
+                getString(R.string.ingresa_un_titulo), Toast.LENGTH_LONG).show()
         }
     }
 

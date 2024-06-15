@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="message_link_download">Télécharge cette application AutoMotive avec moi sur les embrayages, une application avec des images, des descriptions et des références sur cette spécialité, https://play.google.com/store/apps/details?id=com.androidavid.prixmotors</string>
+    <string name="menu_home_shared">Partager</string>
+    <string name="menu_home_email">Email</string>
+    <string name="menu_home_policy">Politique de confidentialité</string>
+    <string name="menu_main_home">Accueil</string>
+    <string name="menu_main_prensas">Plateaux</string>
+    <string name="menu_main_discos">Disques</string>
+    <string name="menu_main_balineras">Roulements</string>
+    <string name="menu_main_notes">Notes</string>
+    <string name="menu_note_search">Rechercher</string>
+    <string name="menu_edit_note_delete">Supprimer</string>
+    <string name="menu_addnote_save">Enregistrer</string>
+    <string name="add_note_fragment">Ajouter une référence.</string>
+    <string name="addnote_title_hint">Titre ou Nom</string>
+    <string name="add_note_desc_hint">Descriptions</string>
+    <string name="marca_details_products">Marque</string>
+    <string name="modelo_details_products">Modèle</string>
+    <string name="any_details_products">Année</string>
+    <string name="description_details_product">Description</string>
+    <string name="edit_note_fragment">Modifier Référence ou Note.</string>
+    <string name="title_edit_note_fragment">Titre ou Nom</string>
+    <string name="descriptiones_hint_edit_note">Descriptions</string>
+    <string name="edit_notefab_content_description">Modifier note</string>
+    <string name="tv_text_home">EMBRAYAGE</string>
+    <string name="tv_description_home">L&quot;embrayage est l&quot;élément chargé de transmettre la puissance du moteur à la boîte de vitesses de la voiture, permettant ainsi de changer manuellement de vitesse tout en absorbant les secousses de la transmission.</string>
+    <string name="tv_nuevo_en_prensas">Nouveautés en Plateaux de Pression</string>
+    <string name="tv_nuevo_discos">Nouveautés en Disques</string>
+    <string name="note_content_description_image">image signe plus</string>
+    <string name="note_title">Titre de la Note</string>
+    <string name="description_note">Description de la Note</string>
+    <string name="marca_item_pdb">Marque</string>
+    <string name="modelo_item_pdb">Modèle</string>
+    <string name="any_item_pdb">Année</string>
+    <string name="inicio_label_fragment_home">Accueil</string>
+    <string name="prensas_fragment_prensas">Plateaux de Pression</string>
+    <string name="balineras_fragment">Roulements</string>
+    <string name="agregar_ref_fragment">Ajouter Réf</string>
+    <string name="detalles_fragment">Détails</string>
+    <string name="agregar_productos_fragment">Ajouter Produits</string>
+    <string name="politica_de_privacidad_fragment">Politique de Confidentialité</string>
+    <string name="editar_ref_fragment">Modifier Réf</string>
+    <string name="notes_fragment">Notes</string>
+    <string name="discos_fragment">Disques</string>
+    <string name="compartir_con">Partager avec</string>
+    <string name="enviar_email">Envoyer email</string>
+    <string name="referencia_guardada">Référence Enregistrée</string>
+    <string name="ingresa_un_titulo">Veuillez entrer un titre ou une note</string>
+    <string name="eliminar_nota_title">Supprimer</string>
+    <string name="message_delete_nota">Êtes-vous sûr de vouloir supprimer cette note ou référence ?</string>
+    <string name="eliminar_nota">Supprimer</string>
+    <string name="referencia_eliminada">Référence Supprimée</string>
+    <string name="cancelar_nota">Annuler</string>
+
+
+
+</resources>

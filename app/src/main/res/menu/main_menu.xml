@@ -8,31 +8,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:icon="@drawable/home"
-        android:title="Home" />
+        android:title="@string/menu_main_home" />
     <item
-        android:id="@+id/fragmentAddProducts"
+        android:id="@+id/fragmentLibrary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_category"
+        android:title="Categorias" />
+    <item
+        android:id="@+id/fragmentNotes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:icon="@drawable/car_repair"
-        android:title="Agregar" />
-    <item
-        android:id="@+id/fragmentPrensas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:icon="@drawable/car_repair"
-        android:title="Prensas" />
-    <item
-        android:id="@+id/fragmentDiscos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:icon="@drawable/disc_full"
-        android:title="Discos" />
-    <item
-        android:id="@+id/fragmentRodamientos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:icon="@drawable/rodamientos"
-        android:title="Balineras" />
+        android:title="@string/menu_main_notes"
+        />
 
 </group>
 </menu>

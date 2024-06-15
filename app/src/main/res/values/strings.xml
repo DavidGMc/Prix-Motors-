@@ -1,8 +1,64 @@
 <resources>
-    <string name="app_name">Prix Motors+</string>
+    <string name="app_name" translatable="false">Prix Motors+</string>
+    <string name="note_db" translatable="false">note_db</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="admob_intersticial" translatable="false">ca-app-pub-2196269772372009/3265134923</string>
+    <string name="url_privacy_policy_html" translatable="false">file:///android_asset/privacy-policy.html </string>
+
+    <string name="message_link_download">Descarga conmigo esta app AutoMotriz sobre Embragues (Clucth).Una aplicación con imagenes , descripciones y referencias de esta especialidad, Buscala aqui en la Play Store:  https://play.google.com/store/apps/details?id=com.androidavid.prixmotors</string>
+    <string name="menu_home_shared">Compartir</string>
+    <string name="menu_home_email">email</string>
+    <string name="menu_home_policy">Politica-privacidad</string>
+    <string name="menu_main_home">Inicio</string>
+    <string name="menu_main_prensas">Prensas</string>
+    <string name="menu_main_discos">Discos</string>
+    <string name="menu_main_balineras">Balineras</string>
+    <string name="menu_main_notes">Notas</string>
+    <string name="menu_note_search">Buscar</string>
+    <string name="menu_edit_note_delete">Eliminar</string>
+    <string name="menu_addnote_save">Guardar</string>
+    <string name="add_note_fragment">Agrega una referencia.</string>
+    <string name="addnote_title_hint">Titulo o nombre</string>
+    <string name="add_note_desc_hint">Descripciones</string>
+    <string name="marca_details_products">Marca</string>
+    <string name="modelo_details_products">Modelo</string>
+    <string name="any_details_products">Año</string>
+    <string name="description_details_product">Descripción</string>
+    <string name="edit_note_fragment">Editar Referencia o Nota.</string>
+    <string name="title_edit_note_fragment">Titulo o Nombre</string>
+    <string name="descriptiones_hint_edit_note">descripciones</string>
+    <string name="edit_notefab_content_description">"editar nota "</string>
+    <string name="tv_text_home">EMBRAGUE</string>
+    <string name="tv_description_home">El embrague es el elemento encargado de transmitir la potencia del motor hasta la caja de cambios del automóvil, permitiendo que podamos, manualmente, realizar el cambio de marchas a la vez que se absorben las sacudidas de la transmisión.</string>
+    <string name="tv_nuevo_en_prensas">Lo nuevo en prensas</string>
+    <string name="tv_nuevo_discos">Lo nuevo en discos</string>
+    <string name="note_content_description_image">imagen signo mas</string>
+    <string name="note_title">Titulo de la Nota</string>
+    <string name="description_note">Descripcion de la Nota</string>
+    <string name="marca_item_pdb">Marca</string>
+    <string name="modelo_item_pdb">Modelo</string>
+    <string name="any_item_pdb">Año</string>
+    <string name="inicio_label_fragment_home">Inicio</string>
+    <string name="prensas_fragment_prensas">Prensas</string>
+    <string name="balineras_fragment">Balineras</string>
+    <string name="agregar_ref_fragment">Agregar Ref</string>
+    <string name="detalles_fragment">Detalles</string>
+    <string name="agregar_productos_fragment">Agregar Productos</string>
+    <string name="politica_de_privacidad_fragment">Politica de Privacidad</string>
+    <string name="editar_ref_fragment">Editar Ref</string>
+    <string name="notes_fragment">Notes</string>
+    <string name="discos_fragment">Discos</string>
+    <string name="compartir_con">Compartir con</string>
+    <string name="enviar_email">Enviar email</string>
+    <string name="referencia_guardada">Referencia Guardada</string>
+    <string name="ingresa_un_titulo">Por favor ingresa un titulo o Nota</string>
+    <string name="eliminar_nota_title">Eliminar</string>
+    <string name="message_delete_nota">Estas seguro de Eliminar esta Nota o Referencia?</string>
+    <string name="eliminar_nota">Eliminar</string>
+    <string name="referencia_eliminada">"Referencia Eliminada "</string>
+    <string name="cancelar_nota">Cancelar</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="large_text">"Material is the metaphor.\n\n"</string>
-    <string name="default_notification_channel_id">fcm_default_channel</string>
-    <string name="admob_intersticial">ca-app-pub-3940256099942544/1033173712</string>
+
+
 </resources>
