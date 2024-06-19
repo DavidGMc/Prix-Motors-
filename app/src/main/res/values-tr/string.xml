@@ -52,5 +52,8 @@
     <string name="eliminar_nota">Sil</string>
     <string name="referencia_eliminada">"Referans Silindi"</string>
     <string name="cancelar_nota">İptal</string>
+    <string name="categories">Kategoriler</string>
+    <string name="clutch_kit">Debriyaj Kiti</string>
+
 
 </resources>

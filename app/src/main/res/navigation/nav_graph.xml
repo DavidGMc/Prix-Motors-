@@ -20,6 +20,9 @@
         <action
             android:id="@+id/action_fragmentHome_to_fragmentLibrary"
             app:destination="@id/fragmentLibrary" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentKitEmbragues"
+            app:destination="@id/fragmentKitEmbragues" />
     </fragment>
     <fragment
         android:id="@+id/fragmentPrensas"
@@ -111,6 +114,12 @@
         <action
             android:id="@+id/action_detailsFragmentProducts_to_fragmentHome2"
             app:destination="@id/fragmentHome" />
+        <action
+            android:id="@+id/action_detailsFragmentProducts_to_fragmentLibrary"
+            app:destination="@id/fragmentLibrary" />
+        <action
+            android:id="@+id/action_detailsFragmentProducts_to_fragmentKitEmbragues"
+            app:destination="@id/fragmentKitEmbragues" />
     </fragment>
     <fragment
         android:id="@+id/fragmentAddProducts"
@@ -137,5 +146,21 @@
         <action
             android:id="@+id/action_fragmentLibrary_to_fragmentPrensas"
             app:destination="@id/fragmentPrensas" />
+        <action
+            android:id="@+id/action_fragmentLibrary_to_fragmentKitEmbragues"
+            app:destination="@id/fragmentKitEmbragues" />
+        <action
+            android:id="@+id/action_fragmentLibrary_self"
+            app:destination="@id/fragmentLibrary" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentKitEmbragues"
+        android:name="com.androidavid.prixmotors.fragment.FragmentKitEmbragues"
+        android:label="fragment_kit_embragues"
+        tools:layout="@layout/fragment_kit_embragues" >
+        <action
+            android:id="@+id/action_fragmentKitEmbragues_to_detailsFragmentProducts"
+            app:destination="@id/detailsFragmentProducts" />
+
     </fragment>
 </navigation>

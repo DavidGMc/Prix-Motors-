@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:icon="@drawable/ic_category"
-        android:title="Categorias" />
+        android:title="@string/categories" />
     <item
         android:id="@+id/fragmentNotes"
         android:layout_width="wrap_content"

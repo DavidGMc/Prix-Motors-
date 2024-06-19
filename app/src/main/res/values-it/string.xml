@@ -52,5 +52,8 @@
     <string name="eliminar_nota">Elimina</string>
     <string name="referencia_eliminada">"Riferimento Eliminato "</string>
     <string name="cancelar_nota">Annulla</string>
+    <string name="categories">Categorie</string>
+    <string name="clutch_kit">Kit frizione</string>
+
 
 </resources>

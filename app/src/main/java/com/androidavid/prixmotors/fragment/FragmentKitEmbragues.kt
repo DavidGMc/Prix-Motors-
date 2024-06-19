@@ -15,43 +15,44 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.androidavid.prixmotors.R
 import com.androidavid.prixmotors.adapter.ProductsAdapter
-import com.androidavid.prixmotors.databinding.FragmentDiscosBinding
+import com.androidavid.prixmotors.databinding.FragmentKitEmbraguesBinding
 import com.androidavid.prixmotors.model.Products
 import com.androidavid.prixmotors.ui.MainActivity
-import com.androidavid.prixmotors.viewmodel.DiscosViewModel
+import com.androidavid.prixmotors.viewmodel.KitViewModel
 import com.androidavid.prixmotors.viewmodel.SharedViewModel
 
-class FragmentDiscos : Fragment(R.layout.fragment_discos) {
-    private var _binding: FragmentDiscosBinding? = null
+
+class FragmentKitEmbragues : Fragment(R.layout.fragment_kit_embragues) {
+
+    private var _binding: FragmentKitEmbraguesBinding? = null
     private val binding get() = _binding!!
-    private lateinit var discosViewModel: DiscosViewModel
+    private lateinit var kitViewModel : KitViewModel
     private lateinit var productsAdapter: ProductsAdapter
     private lateinit var interstitialAdManager: InterstitialAdManager
-    private var clickCounterDis = 0
+    private var clickCounterPrensas = 0
     private val AD_CLICK_THRESHOLD = 5
     private val sharedViewModel: SharedViewModel by activityViewModels()
-
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding  = FragmentDiscosBinding.inflate(inflater, container, false)
+        _binding = FragmentKitEmbraguesBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         interstitialAdManager = InterstitialAdManager.getInstance(requireContext())
         interstitialAdManager.loadInterstitialAd(requireActivity())
-
-        discosViewModel = (activity as MainActivity).discosViewModel
-
+        kitViewModel = (activity as MainActivity).kitViewModel
         setupHomeRecyclerView()
-        discosViewModel.obtenerDiscos().observe(viewLifecycleOwner, Observer { products ->
+
+        kitViewModel.obtenerKit().observe(viewLifecycleOwner, Observer { products ->
             productsAdapter.submitList(products)
         })
 
+        // Configurar la barra de búsqueda
 
         binding.searchViewProducts.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
@@ -63,39 +64,34 @@ class FragmentDiscos : Fragment(R.layout.fragment_discos) {
                 return true
             }
         })
-
-
     }
     private fun setupHomeRecyclerView(){
 
         productsAdapter = ProductsAdapter { product ->
-            handleProductClick(product)
+            handleProductClickPrensas(product)
         }
-
-        binding.rvDiscosFragment.apply {
+        binding.rvKitFragment.apply {
             layoutManager= StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
             setHasFixedSize(true)
             adapter= productsAdapter
         }
-
     }
-
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+    private fun handleProductClickPrensas(product: Products) {
 
-
-    private fun handleProductClick(product: Products) {
         sharedViewModel.clickCounterDis.value = (sharedViewModel.clickCounterDis.value ?: 0) + 1
         if ((sharedViewModel.clickCounterDis.value ?: 0) % AD_CLICK_THRESHOLD == 0) {
             Log.d(ContentValues.TAG, "Click = ${sharedViewModel.clickCounterDis.value}")
             interstitialAdManager.showInterstitialAd(requireActivity())
             sharedViewModel.clickCounterDis.value = 0
         } else {
-            val action = FragmentDiscosDirections.actionFragmentDiscosToDetailsFragmentProducts(product)
+            val action =
+                FragmentKitEmbraguesDirections.actionFragmentKitEmbraguesToDetailsFragmentProducts(product)
             findNavController().navigate(action)
         }
     }
+
 }

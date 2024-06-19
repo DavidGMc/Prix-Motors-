@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
@@ -48,7 +49,22 @@ class FragmentRodamientos : Fragment(R.layout.fragment_rodamientos) {
         interstitialAdManager.loadInterstitialAd(requireActivity())
         rodamientosViewModel= (activity as MainActivity).rodamientosViewModel
         setupHomeRecyclerView()
-        observarDiscos()
+
+       rodamientosViewModel.obtenerRodamientos().observe(viewLifecycleOwner, Observer { products ->
+            productsAdapter.submitList(products)
+        })
+
+
+        binding.searchViewProducts.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                productsAdapter.filter.filter(newText)
+                return true
+            }
+        })
 
 
     }
@@ -65,11 +81,7 @@ class FragmentRodamientos : Fragment(R.layout.fragment_rodamientos) {
         }
 
     }
-    private fun observarDiscos() {
-        rodamientosViewModel.obtenerRodamientos().observe(viewLifecycleOwner, Observer { rodamientos ->
-            productsAdapter.differ.submitList(rodamientos)
-        })
-    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

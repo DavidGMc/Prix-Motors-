@@ -52,5 +52,8 @@
     <string name="eliminar_nota">Excluir</string>
     <string name="referencia_eliminada">"Referência Excluída"</string>
     <string name="cancelar_nota">Cancelar</string>
+    <string name="categories">Categorias</string>
+    <string name="clutch_kit">Kit de Embreagem</string>
+
 
 </resources>

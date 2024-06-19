@@ -3,6 +3,8 @@ package com.androidavid.prixmotors.adapter
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Filter
+import android.widget.Filterable
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -10,7 +12,11 @@ import coil.load
 import com.androidavid.prixmotors.databinding.ItemPdbBinding
 import com.androidavid.prixmotors.model.Products
 
-class ProductsAdapter(private val onItemClickListener: (Products) -> Unit) : RecyclerView.Adapter<ProductsAdapter.PrensaViewHolder>() {
+class ProductsAdapter(private val onItemClickListener: (Products) -> Unit) : RecyclerView.Adapter<ProductsAdapter.PrensaViewHolder>(),
+    Filterable {
+
+    private var originalProducts: List<Products> = emptyList()
+    private var filteredProducts: List<Products> = emptyList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PrensaViewHolder {
         val binding = ItemPdbBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -61,4 +67,41 @@ class ProductsAdapter(private val onItemClickListener: (Products) -> Unit) : Rec
     }
 
     val differ = AsyncListDiffer(this, differCallback)
+
+    fun submitList(products: List<Products>) {
+        originalProducts = products
+        filteredProducts = products
+        differ.submitList(products)
+    }
+
+    override fun getFilter(): Filter {
+        return object : Filter() {
+            override fun performFiltering(constraint: CharSequence?): FilterResults {
+                val filteredList = mutableListOf<Products>()
+                val query = constraint?.toString()?.trim() ?: ""
+
+                if (query.isEmpty()) {
+                    filteredList.addAll(originalProducts)
+                } else {
+                    for (product in originalProducts) {
+                        if (product.marca.contains(query, ignoreCase = true) ||
+                            product.modelo.contains(query, ignoreCase = true)
+                        ) {
+                            filteredList.add(product)
+                        }
+                    }
+                }
+
+                val filterResults = FilterResults()
+                filterResults.values = filteredList
+                return filterResults
+            }
+
+            @Suppress("UNCHECKED_CAST")
+            override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
+                filteredProducts = results?.values as? List<Products> ?: emptyList()
+                differ.submitList(filteredProducts)
+            }
+        }
+    }
 }

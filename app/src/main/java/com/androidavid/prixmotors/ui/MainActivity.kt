@@ -27,6 +27,7 @@ import com.androidavid.prixmotors.database.NoteDatabase
 import com.androidavid.prixmotors.databinding.ActivityMainBinding
 import com.androidavid.prixmotors.repository.DiscoRepositoryImpl
 import com.androidavid.prixmotors.repository.HomeRepositoryImpl
+import com.androidavid.prixmotors.repository.KitRepositoryimpl
 import com.androidavid.prixmotors.repository.LibraryRepositoryImpl
 import com.androidavid.prixmotors.repository.MainRepositoryImpl
 import com.androidavid.prixmotors.repository.NoteRepository
@@ -37,6 +38,8 @@ import com.androidavid.prixmotors.viewmodel.DiscosViewModel
 import com.androidavid.prixmotors.viewmodel.DiscosViewModelFactory
 import com.androidavid.prixmotors.viewmodel.HomeFragViewModel
 import com.androidavid.prixmotors.viewmodel.HomeFragViewModelFactory
+import com.androidavid.prixmotors.viewmodel.KitViewModel
+import com.androidavid.prixmotors.viewmodel.KitViewModelFactory
 import com.androidavid.prixmotors.viewmodel.LibraryViewModel
 import com.androidavid.prixmotors.viewmodel.LibraryViewModelFactory
 import com.androidavid.prixmotors.viewmodel.MainViewModel
@@ -65,6 +68,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var prensaViewModel: PrensasViewModel
     lateinit var discosViewModel: DiscosViewModel
     lateinit var rodamientosViewModel: RodamientosViewModel
+    lateinit var kitViewModel: KitViewModel
     lateinit var productsViewModel: ProductsViewModel
     lateinit var noteViewModel: NoteViewModel
     lateinit var sharedViewModel: SharedViewModel
@@ -92,6 +96,14 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         binding.bottomNavView.setupWithNavController(navController)
         setupViewModel()
+
+        binding.bottomNavView.setOnNavigationItemReselectedListener { item ->
+            when (item.itemId) {
+                R.id.fragmentLibrary-> navController.popBackStack(R.id.fragmentLibrary, false)
+
+
+            }
+        }
 
     }
 
@@ -136,6 +148,7 @@ class MainActivity : AppCompatActivity() {
         val prensaRepository = PrensaRepositoryImpl(api)
         val discoRepository = DiscoRepositoryImpl(api)
         val rodamientoRepository = RodamientoRepositoryimpl(api)
+        val kitRepository = KitRepositoryimpl(api)
         val productsRepository = ProductsRepositoryImpl(api)
 
 
@@ -145,6 +158,7 @@ class MainActivity : AppCompatActivity() {
         val libraryViewModelFactory = LibraryViewModelFactory(libraryRepository)
         val discosViewModelFactory = DiscosViewModelFactory(discoRepository)
         val rodamientosViewModelFactory = RodamientosViewModelFactory(rodamientoRepository)
+        val kitViewModelFactory = KitViewModelFactory(kitRepository)
         val homeFragViewModelFactory = HomeFragViewModelFactory(homeRepository)
         val productsFragViewModelFactory = ProductsViewModelFactory(productsRepository)
 
@@ -158,6 +172,8 @@ class MainActivity : AppCompatActivity() {
             ViewModelProvider(this, discosViewModelFactory)[DiscosViewModel::class.java]
         rodamientosViewModel =
             ViewModelProvider(this, rodamientosViewModelFactory)[RodamientosViewModel::class.java]
+        kitViewModel=
+            ViewModelProvider(this, kitViewModelFactory)[KitViewModel::class.java]
         homeFragViewModel =
             ViewModelProvider (this,homeFragViewModelFactory)[HomeFragViewModel::class.java]
 

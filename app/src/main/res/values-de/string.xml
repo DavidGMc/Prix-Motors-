@@ -53,5 +53,8 @@
     <string name="eliminar_nota">Löschen</string>
     <string name="referencia_eliminada">Referenz gelöscht</string>
     <string name="cancelar_nota">Abbrechen</string>
+    <string name="categories">Kategorien</string>
+    <string name="clutch_kit">Kupplungssatz</string>
+
 
 </resources>

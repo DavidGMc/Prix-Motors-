@@ -52,6 +52,9 @@
     <string name="eliminar_nota">删除</string>
     <string name="referencia_eliminada">参考已删除</string>
     <string name="cancelar_nota">取消</string>
+    <string name="categories">类别</string>
+    <string name="clutch_kit">离合器套件</string>
+
 
 
 </resources>

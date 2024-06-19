@@ -52,5 +52,8 @@
     <string name="eliminar_nota">हटाएं</string>
     <string name="referencia_eliminada">"संदर्भ हटा दिया गया"</string>
     <string name="cancelar_nota">रद्द करें</string>
+    <string name="categories">श्रेणियाँ</string>
+    <string name="clutch_kit">क्लच किट</string>
+
 
 </resources>

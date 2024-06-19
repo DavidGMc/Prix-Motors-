@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
@@ -14,6 +15,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.androidavid.prixmotors.R
 import com.androidavid.prixmotors.adapter.ProductsAdapter
+
 import com.androidavid.prixmotors.databinding.FragmentPrensasBinding
 import com.androidavid.prixmotors.model.Products
 import com.androidavid.prixmotors.ui.MainActivity
@@ -21,7 +23,7 @@ import com.androidavid.prixmotors.viewmodel.PrensasViewModel
 import com.androidavid.prixmotors.viewmodel.SharedViewModel
 
 
-class FragmentPrensas : Fragment(R.layout.fragment_prensas) {
+ class FragmentPrensas : Fragment(R.layout.fragment_prensas) {
     private var _binding: FragmentPrensasBinding? = null
     private val binding get() = _binding!!
     private lateinit var prensasViewModel : PrensasViewModel
@@ -47,7 +49,23 @@ class FragmentPrensas : Fragment(R.layout.fragment_prensas) {
         interstitialAdManager.loadInterstitialAd(requireActivity())
         prensasViewModel = (activity as MainActivity).prensaViewModel
         setupHomeRecyclerView()
-        observarPrensas()
+
+        prensasViewModel.obtenerPrensas().observe(viewLifecycleOwner, Observer { products ->
+            productsAdapter.submitList(products)
+        })
+
+        // Configurar la barra de búsqueda
+
+        binding.searchViewProducts.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                productsAdapter.filter.filter(newText)
+                return true
+            }
+        })
 
     }
 
@@ -62,11 +80,7 @@ class FragmentPrensas : Fragment(R.layout.fragment_prensas) {
             adapter= productsAdapter
         }
     }
-    private fun observarPrensas() {
-        prensasViewModel.obtenerPrensas().observe(viewLifecycleOwner, Observer { prensas ->
-           productsAdapter.differ.submitList(prensas)
-        })
-    }
+
 
 
     override fun onDestroyView() {
@@ -84,7 +98,9 @@ class FragmentPrensas : Fragment(R.layout.fragment_prensas) {
         val action = FragmentPrensasDirections.actionFragmentPrensasToDetailsFragmentProducts(product)
         findNavController().navigate(action)
     }
-}
+
+
+ }
 
 
 

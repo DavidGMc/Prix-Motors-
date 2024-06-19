@@ -53,5 +53,8 @@
     <string name="eliminar_nota">삭제</string>
     <string name="referencia_eliminada">참조가 삭제되었습니다</string>
     <string name="cancelar_nota">취소</string>
+    <string name="categories">카테고리</string>
+    <string name="clutch_kit">클러치 키트</string>
+
 
 </resources>

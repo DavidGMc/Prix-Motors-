@@ -52,6 +52,9 @@
     <string name="eliminar_nota">削除</string>
     <string name="referencia_eliminada">参照が削除されました</string>
     <string name="cancelar_nota">キャンセル</string>
+    <string name="categories">カテゴリー</string>
+    <string name="clutch_kit">クラッチキット</string>
+
 
 
 </resources>

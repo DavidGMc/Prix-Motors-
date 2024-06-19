@@ -53,5 +53,8 @@
     <string name="eliminar_nota">Delete</string>
     <string name="referencia_eliminada">Reference Deleted</string>
     <string name="cancelar_nota">Cancel</string>
+    <string name="categories">Categories</string>
+    <string name="clutch_kit">Clutch Kit</string>
+
 
 </resources>
