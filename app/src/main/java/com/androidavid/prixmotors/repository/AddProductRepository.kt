@@ -3,7 +3,7 @@ package com.androidavid.prixmotors.repository
 import com.androidavid.prixmotors.model.AddProductResponse
 import retrofit2.Response
 
-interface ProductRepository {
+interface AddProductRepository {
     suspend fun addProduct(
         key: String,
         marca: String,

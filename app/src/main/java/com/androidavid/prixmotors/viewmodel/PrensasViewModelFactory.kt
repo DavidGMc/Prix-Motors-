@@ -2,9 +2,9 @@ package com.androidavid.prixmotors.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.androidavid.prixmotors.repository.PrensaRepository
+import com.androidavid.prixmotors.repository.ProductsRepository
 
-class PrensasViewModelFactory(private val repository: PrensaRepository) : ViewModelProvider.Factory{
+class PrensasViewModelFactory(private val repository: ProductsRepository) : ViewModelProvider.Factory{
 
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return PrensasViewModel(repository) as T

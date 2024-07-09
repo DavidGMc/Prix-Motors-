@@ -8,11 +8,11 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class DiscoRepositoryImpl(private val api: ClutchAPI): DiscoRepository {
+class DiscoRepositoryImpl(private val api: ClutchAPI): ProductsRepository {
 
     val categoryId = 2
 
-    override fun obtenerDiscos(): LiveData<List<Products>> {
+    override fun obtenerProducts(): LiveData<List<Products>> {
         val result = MutableLiveData<List<Products>>()
 
         api.getProductsByCategory(categoryId).enqueue(object : Callback<List<Products>> {

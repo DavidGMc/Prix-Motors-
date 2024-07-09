@@ -33,7 +33,7 @@ class FragmentHome : Fragment(R.layout.fragment_home) {
     private lateinit var interstitialAdManager: InterstitialAdManager
     private var mFirebaseRemoteConfig: FirebaseRemoteConfig? = null
     private var clickCounter = 0
-    private val AD_CLICK_THRESHOLD = 5
+    private val AD_CLICK_THRESHOLD = 3
     private val sharedViewModel: SharedViewModel by activityViewModels()
 
 

@@ -28,7 +28,7 @@ class FragmentDiscos : Fragment(R.layout.fragment_discos) {
     private lateinit var productsAdapter: ProductsAdapter
     private lateinit var interstitialAdManager: InterstitialAdManager
     private var clickCounterDis = 0
-    private val AD_CLICK_THRESHOLD = 5
+    private val AD_CLICK_THRESHOLD = 3
     private val sharedViewModel: SharedViewModel by activityViewModels()
 
     override fun onCreateView(

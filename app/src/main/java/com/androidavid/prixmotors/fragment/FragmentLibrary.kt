@@ -28,7 +28,7 @@ class FragmentLibrary : Fragment(R.layout.fragment_library) {
 
     private lateinit var interstitialAdManager: InterstitialAdManager
     private var clickCounterPrensas = 0
-    private val AD_CLICK_THRESHOLD = 5
+    private val AD_CLICK_THRESHOLD = 3
     private val sharedViewModel: SharedViewModel by activityViewModels()
 
     override fun onCreateView(

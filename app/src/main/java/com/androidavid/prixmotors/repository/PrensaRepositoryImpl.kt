@@ -8,11 +8,11 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class PrensaRepositoryImpl(private val api: ClutchAPI): PrensaRepository {
+class PrensaRepositoryImpl(private val api: ClutchAPI): ProductsRepository {
 
     val categoryId = 1
 
-    override fun obtenerPrensas(): LiveData<List<Products>> {
+    override fun obtenerProducts(): LiveData<List<Products>> {
         val result = MutableLiveData<List<Products>>()
 
         api.getProductsByCategory(categoryId).enqueue(object : Callback<List<Products>> {

@@ -8,10 +8,10 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class RodamientoRepositoryimpl (private val api: ClutchAPI) : RodamientoRepository {
+class RodamientoRepositoryimpl (private val api: ClutchAPI) : ProductsRepository {
     val categoryId = 3
 
-    override fun obtenerRodamientos(): LiveData<List<Products>> {
+    override fun obtenerProducts(): LiveData<List<Products>> {
         val result = MutableLiveData<List<Products>>()
 
         api.getProductsByCategory(categoryId).enqueue(object : Callback<List<Products>> {

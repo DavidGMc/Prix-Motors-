@@ -4,7 +4,7 @@ import com.androidavid.prixmotors.ClutchAPI
 import com.androidavid.prixmotors.model.AddProductResponse
 import retrofit2.Response
 
-class ProductsRepositoryImpl (private val api: ClutchAPI) : ProductRepository{
+class AddProductsRepositoryImpl (private val api: ClutchAPI) : AddProductRepository{
     override suspend fun addProduct(
         key: String,
         marca: String,

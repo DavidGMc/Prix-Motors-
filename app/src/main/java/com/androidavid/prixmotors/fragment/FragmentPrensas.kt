@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.widget.SearchView
+
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
@@ -23,17 +24,16 @@ import com.androidavid.prixmotors.viewmodel.PrensasViewModel
 import com.androidavid.prixmotors.viewmodel.SharedViewModel
 
 
- class FragmentPrensas : Fragment(R.layout.fragment_prensas) {
+
+class FragmentPrensas : Fragment(R.layout.fragment_prensas) {
     private var _binding: FragmentPrensasBinding? = null
     private val binding get() = _binding!!
     private lateinit var prensasViewModel : PrensasViewModel
     private lateinit var productsAdapter: ProductsAdapter
     private lateinit var interstitialAdManager: InterstitialAdManager
     private var clickCounterPrensas = 0
-    private val AD_CLICK_THRESHOLD = 5
+    private val AD_CLICK_THRESHOLD = 3
     private val sharedViewModel: SharedViewModel by activityViewModels()
-
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

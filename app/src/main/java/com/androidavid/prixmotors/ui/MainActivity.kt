@@ -25,6 +25,7 @@ import com.androidavid.prixmotors.R
 import com.androidavid.prixmotors.RetrofitClient
 import com.androidavid.prixmotors.database.NoteDatabase
 import com.androidavid.prixmotors.databinding.ActivityMainBinding
+import com.androidavid.prixmotors.repository.AddProductsRepositoryImpl
 import com.androidavid.prixmotors.repository.DiscoRepositoryImpl
 import com.androidavid.prixmotors.repository.HomeRepositoryImpl
 import com.androidavid.prixmotors.repository.KitRepositoryimpl
@@ -32,8 +33,9 @@ import com.androidavid.prixmotors.repository.LibraryRepositoryImpl
 import com.androidavid.prixmotors.repository.MainRepositoryImpl
 import com.androidavid.prixmotors.repository.NoteRepository
 import com.androidavid.prixmotors.repository.PrensaRepositoryImpl
-import com.androidavid.prixmotors.repository.ProductsRepositoryImpl
 import com.androidavid.prixmotors.repository.RodamientoRepositoryimpl
+import com.androidavid.prixmotors.viewmodel.AddProductsViewModel
+import com.androidavid.prixmotors.viewmodel.AddProductsViewModelFactory
 import com.androidavid.prixmotors.viewmodel.DiscosViewModel
 import com.androidavid.prixmotors.viewmodel.DiscosViewModelFactory
 import com.androidavid.prixmotors.viewmodel.HomeFragViewModel
@@ -48,8 +50,6 @@ import com.androidavid.prixmotors.viewmodel.NoteViewModel
 import com.androidavid.prixmotors.viewmodel.NoteViewModelFactory
 import com.androidavid.prixmotors.viewmodel.PrensasViewModel
 import com.androidavid.prixmotors.viewmodel.PrensasViewModelFactory
-import com.androidavid.prixmotors.viewmodel.ProductsViewModel
-import com.androidavid.prixmotors.viewmodel.ProductsViewModelFactory
 import com.androidavid.prixmotors.viewmodel.RodamientosViewModel
 import com.androidavid.prixmotors.viewmodel.RodamientosViewModelFactory
 import com.androidavid.prixmotors.viewmodel.SharedViewModel
@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var discosViewModel: DiscosViewModel
     lateinit var rodamientosViewModel: RodamientosViewModel
     lateinit var kitViewModel: KitViewModel
-    lateinit var productsViewModel: ProductsViewModel
+    lateinit var productsViewModel: AddProductsViewModel
     lateinit var noteViewModel: NoteViewModel
     lateinit var sharedViewModel: SharedViewModel
 
@@ -149,7 +149,7 @@ class MainActivity : AppCompatActivity() {
         val discoRepository = DiscoRepositoryImpl(api)
         val rodamientoRepository = RodamientoRepositoryimpl(api)
         val kitRepository = KitRepositoryimpl(api)
-        val productsRepository = ProductsRepositoryImpl(api)
+        val productsRepository = AddProductsRepositoryImpl(api)
 
 
         val viewModelProviderFactory = NoteViewModelFactory(application, noteRepository)
@@ -160,7 +160,7 @@ class MainActivity : AppCompatActivity() {
         val rodamientosViewModelFactory = RodamientosViewModelFactory(rodamientoRepository)
         val kitViewModelFactory = KitViewModelFactory(kitRepository)
         val homeFragViewModelFactory = HomeFragViewModelFactory(homeRepository)
-        val productsFragViewModelFactory = ProductsViewModelFactory(productsRepository)
+        val productsFragViewModelFactory = AddProductsViewModelFactory(productsRepository)
 
         noteViewModel = ViewModelProvider(this, viewModelProviderFactory)[NoteViewModel::class.java]
         viewModel = ViewModelProvider(this, mainViewModelFactory)[MainViewModel::class.java]
@@ -178,7 +178,7 @@ class MainActivity : AppCompatActivity() {
             ViewModelProvider (this,homeFragViewModelFactory)[HomeFragViewModel::class.java]
 
         productsViewModel=
-              ViewModelProvider (this,productsFragViewModelFactory)[ProductsViewModel::class.java]
+              ViewModelProvider (this,productsFragViewModelFactory)[AddProductsViewModel::class.java]
         sharedViewModel = ViewModelProvider(this)[SharedViewModel::class.java]
 
     }

@@ -5,11 +5,11 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.androidavid.prixmotors.model.AddProductResponse
-import com.androidavid.prixmotors.repository.ProductRepository
+import com.androidavid.prixmotors.repository.AddProductRepository
 import kotlinx.coroutines.launch
 import retrofit2.Response
 
-class ProductsViewModel(private val repository: ProductRepository): ViewModel() {
+class AddProductsViewModel(private val repository: AddProductRepository): ViewModel() {
 
     fun addProduct(
         key: String,

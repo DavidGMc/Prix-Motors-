@@ -19,14 +19,14 @@ import androidx.fragment.app.Fragment
 import com.androidavid.prixmotors.ui.MainActivity
 import com.androidavid.prixmotors.R
 import com.androidavid.prixmotors.databinding.FragmentAddProductBinding
-import com.androidavid.prixmotors.viewmodel.ProductsViewModel
+import com.androidavid.prixmotors.viewmodel.AddProductsViewModel
 import java.io.ByteArrayOutputStream
 
 
 class FragmentAddProducts : Fragment(R.layout.fragment_add_product) {
     private var _binding: FragmentAddProductBinding ? = null
     private val binding get() = _binding!!
-    private lateinit var productsViewModel: ProductsViewModel
+    private lateinit var productsViewModel: AddProductsViewModel
     private val IMAGE_PICK_CODE = 1000
     private val PERMISSION_CODE = 1001
     private var pictureUno: String? = null

@@ -80,6 +80,7 @@ class FragmentEditNote : Fragment(R.layout.fragment_edit_note), MenuProvider {
 
             setPositiveButton(getString(R.string.eliminar_nota)){ _, _ ->
                 notesViewModel.deleteNote(currentNote)
+                interstitialAdManager.showInterstitialAd(requireActivity())
                 Toast.makeText(context, getString(R.string.referencia_eliminada), Toast.LENGTH_LONG).show()
                 view?.findNavController()?.popBackStack(R.id.fragmentNotes,false)
             }
