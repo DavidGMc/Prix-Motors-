@@ -10,9 +10,9 @@
     <string name="menu_home_email">email</string>
     <string name="menu_home_policy">Politica-privacidad</string>
     <string name="menu_main_home">Inicio</string>
-    <string name="menu_main_prensas">Prensas</string>
+    <string name="menu_main_prensas">Prensas-Plato de Presion</string>
     <string name="menu_main_discos">Discos</string>
-    <string name="menu_main_balineras">Balineras</string>
+    <string name="menu_main_balineras">Rodamientos-Collarines</string>
     <string name="menu_main_notes">Notas</string>
     <string name="menu_note_search">Buscar</string>
     <string name="menu_edit_note_delete">Eliminar</string>

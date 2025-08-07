@@ -17,6 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <!-- Marca del producto -->
             <TextView
                 android:id="@+id/marcaTextView"
                 android:layout_width="0dp"
@@ -30,6 +31,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <!-- Modelo del producto -->
             <TextView
                 android:id="@+id/modeloTextView"
                 android:layout_width="0dp"
@@ -43,6 +45,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/marcaTextView" />
 
+            <!-- Imagen principal del producto -->
             <ImageView
                 android:id="@+id/picture1"
                 android:layout_width="0dp"
@@ -55,6 +58,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/modeloTextView" />
 
+            <!-- Segunda imagen del producto -->
             <ImageView
                 android:id="@+id/picture2"
                 android:layout_width="0dp"
@@ -67,6 +71,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/picture1" />
 
+            <!-- Año del producto -->
             <TextView
                 android:id="@+id/anoTextView"
                 android:layout_width="0dp"
@@ -80,6 +85,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/picture2" />
 
+            <!-- Descripción del producto -->
             <TextView
                 android:id="@+id/tvDescription"
                 android:layout_width="0dp"
@@ -93,7 +99,17 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/anoTextView" />
 
-            <!-- Otros TextViews -->
+            <!-- Botón de compartir todo el contenido -->
+            <Button
+                android:id="@+id/btnShareAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Compartir"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

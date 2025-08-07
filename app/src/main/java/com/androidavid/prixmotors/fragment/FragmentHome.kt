@@ -1,14 +1,12 @@
 package com.androidavid.prixmotors.fragment
 
 import InterstitialAdManager
-import android.content.ContentValues
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -20,7 +18,6 @@ import com.androidavid.prixmotors.databinding.FragmentHomeBinding
 import com.androidavid.prixmotors.model.Products
 import com.androidavid.prixmotors.ui.MainActivity
 import com.androidavid.prixmotors.viewmodel.HomeFragViewModel
-import com.androidavid.prixmotors.viewmodel.SharedViewModel
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 
 
@@ -32,9 +29,7 @@ class FragmentHome : Fragment(R.layout.fragment_home) {
     private lateinit var productsDiscosAdapter: HomeAdapter
     private lateinit var interstitialAdManager: InterstitialAdManager
     private var mFirebaseRemoteConfig: FirebaseRemoteConfig? = null
-    private var clickCounter = 0
-    private val AD_CLICK_THRESHOLD = 3
-    private val sharedViewModel: SharedViewModel by activityViewModels()
+
 
 
 
@@ -111,12 +106,7 @@ class FragmentHome : Fragment(R.layout.fragment_home) {
 
     private fun handleProductClick(product: Products) {
 
-        sharedViewModel.clickCounterDis.value = (sharedViewModel.clickCounterDis.value ?: 0) + 1
-        if ((sharedViewModel.clickCounterDis.value ?: 0) % AD_CLICK_THRESHOLD == 0) {
-            Log.d(ContentValues.TAG, "Click = ${sharedViewModel.clickCounterDis.value}")
-            interstitialAdManager.showInterstitialAd(requireActivity())
-            sharedViewModel.clickCounterDis.value = 0
-        } else {
+        interstitialAdManager.showInterstitialAd(requireActivity()) {
             val action = FragmentHomeDirections.actionFragmentHomeToDetailsFragmentProducts(product)
             findNavController().navigate(action)
         }
